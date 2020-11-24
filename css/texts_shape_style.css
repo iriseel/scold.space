@@ -1,0 +1,150 @@
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+Q: What would be the better way of organizing the texts? Having each scene be its own html or have all scenes be in 1 big html and use this method to navigate?:
+    <h1 id="top">HTML Basics</h1>
+
+    <a href="#top">
+      Back to top
+    </a>
+*/
+
+#rebus {}
+
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+Q: I can't seem to get the two columns to just center in the page? This does nothing except somehow affect the <nav> before it. Changing the margin and margin-right in the #The_Shrew and #A_Shrew doesn't do anything either.
+A: add a new container for each #The_Shrew and #A_Shrew with a margin-right: auto and margin-left:auto
+Q: This doesn't change anything?
+A:
+*/
+.texts {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#The_Shrew {
+    background:url(../img_texts/background.png);
+
+    height: 1000px;
+    overflow:auto;
+    padding:min(80px, 5vw);
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#A_Shrew {
+    background:url(../img_texts/background.png);
+    float: left;
+    width:50%;
+    max-width: 750px;
+
+    /*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+    put this in the container? or the child
+    */
+    height: 1000px;
+    overflow:auto;
+    padding:min(80px, 5vw);
+    border: 10px solid black;
+    border-radius:50px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h2 {
+    color: #c73e14;
+    line-height:1em;
+    text-align: center;
+
+}
+
+#The_Shrew p {
+    color:black;
+}  
+
+#A_Shrew p {
+    color:black;
+}  
+
+#A_Shrew:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+#container {
+        position:relative;
+        overflow:scroll;
+}
+
+.unmoveable {
+    min-width: 200px;
+    text-align: center;
+    cursor: -webkit-grab; cursor: grab;
+}
+
+/*(ʘ言ʘ╬)
+Q: This behaves like a position:fixed for whatever reason??
+A: You needed to nest the #container within the "texts", otherwise the #moveable's position absolute is directed at the container that encompasses the entire screen, not just the text.
+*/
+#moveable {
+    position: absolute;
+    z-index: 0;
+}
+
+#moveable:active {
+    cursor: -webkit-grabbing; cursor: grabbing;
+}
+
+.floating {
+    /*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+    Q: Why doesn't this shape-outside work?
+    A:
+    shape-outside: url("../img_matter/be_cucked_or_murder_your_wife.png");
+    -webkit-shape-outside:url("../img_matter/be_cucked_or_murder_your_wife.png");
+    */
+    float:left;
+    display:inline-block;
+    width:200px;
+    shape-outside: circle(farthest-side at center) margin-box;
+    margin: 10px;
+    
+}
+
+#notfloating {
+    float:none;
+}
+
+/*(ʘ言ʘ╬)
+    Q: Why are all .floating registering as odd-numbered?
+    A: The :first-of-type pseudo-class represents an element that is the first sibling of its type in the list of children of its parent element.
+    This means that :first-of-type is applied to the first element of its type relative to its parent and not the document's root (or the body element, in this case).
+.floating:nth-of-type(even) {
+    float:right;
+}
+*/
+
+
+
+
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+Unfortunately using classnames doesn't work for this — see script in html'
+.moveable {
+    position: absolute;
+    z-index: 0;
+    width: 200px;
+    text-align: center;
+    cursor: -webkit-grab; cursor: grab;
+}
+
+.moveable:active {
+    cursor: -webkit-grabbing; cursor: grabbing;
+}
+
+.notfloating {
+    float:none;
+    display:inline-block;
+    width:200px;
+    shape-outside: circle(farthest-side at center) margin-box;
+    margin: 10px;
+}
+*/

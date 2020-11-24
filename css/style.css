@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500;600;700;800;900&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+Q: Custom cursor doesn't work
+A: Cursor images have size limits, largest 128x128px and usually 32x32px. Also try making it square?
+A: It works at 128x128px!
+Q: Cursor doesn't align well???
+'*/ 
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+Q: Is there a way to tell the padding and font-size to just stop increasing at whatever their current sizes are? Or do I need to somehow calculate what the padding is and what the font-size is when min-width:1500px and specify those?
+A: Maybe just don't use vw too much lol. stick more to pixels, em, or rem
+ORRRRRRRR.... You could use min()!!!! I just tried it out. Got rid of my need for a media query for font-size too!
+*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Grenze, serif;
+    /*cursor: url(../img_homepage/shrewcursor.png), auto;*/
+    font-size: min(22px, calc(16px + 0.2vmax));
+    background-color:black;
+
+}
+
+img {
+    max-width:100%;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    text-align:center;
+    justify-content: space-around;
+    background: black;
+    padding: 20px 20px;
+    margin: 0px;
+    
+}
+
+nav .title {flex: 1 100%;}
+
+nav h5 a {
+    color:rgb(199, 129, 0);
+}
+
+/*(ʘ言ʘ╬)
+Q: How come it's not centering vertically?? Also it's not actually covering the entire screen??
+A: I needed to change from position:absolute to position:fixed! And then for the .popup mediaquery, I needed to say display:flex rather than display:block!
+*/
+.popup {
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+    height: 100vh;
+    
+    position: fixed;
+    z-index: 3;
+    
+    padding: 50px;
+    background: rgba(0, 0, 0, .75);
+    font-weight:bold;
+    
+    display: none;
+    
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Grenze Gotisch', cursive;
+    
+    text-align:center;
+}
+
+h1, h2 {
+    padding: .4em;
+    margin: .4em;
+}
+
+h3, h4, h5 {
+    padding: .2em;
+    margin: .2em;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 5rem;
+    
+    color: blanchedalmond;
+    text-shadow: 8px 8px 8px #681901;
+    
+}
+
+h2{
+    font-size:4rem;
+    font-weight: 800;
+    line-height: 4rem;
+    
+    color: blanchedalmond;
+    text-shadow: 8px 8px 8px #681901;
+    
+}
+
+h3{
+    font-size: 3rem;
+    font-weight:700;
+    line-height: 3rem;
+    
+    color:rgb(199, 129, 0);
+    /*#c78100*/
+    
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight:600;
+    line-height: 2rem;
+    
+    color: rgb(199, 129, 0);
+
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight:500;
+    line-height: 1.5rem;
+    
+    color: rgb(199, 129, 0);
+    
+}
+
+p {
+    font-family: 'Grenze', serif;
+    font-weight: 200;
+    line-height: 1.6rem;
+    
+    letter-spacing: 0.3px;
+    
+    color:blanchedalmond;
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a {
+    font-family: 'Grenze Gotisch', cursive;
+    text-decoration: none;
+    color:#c73e14;
+}
+
+a:hover {
+    font-size:1.1em;
+    transition:.5s;
+    
+}
+
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+Q: I don't like the way this looks .... redesign this
+*/ 
+nav a.current {
+    color: rgb(255, 192, 77);
+    font-size:120%;
+}
+
+a.notready:hover {
+    cursor:not-allowed;
+}
+
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    justify-content: space-around;
+    background: black;
+    padding: 20px 20px;
+    margin: 0px;
+    
+}
+
+
+/*
+This is to have more spacing between paragraphs and less spacing within paragraphs
+*/
+footer p {
+    margin-bottom: 0.5em;
+    line-height: 1em;
+}
+
+.footer_head {
+    font-size:1.5rem;
+    flex: 1 100%;
+    
+}
+
+/*(ʘ言ʘ╬)
+Q: How do I make the BESHREW ME vertically centered with the shrew image/logo?
+A: You may want to use margins, but you can only use those with block or in-line-block elements so you need to first specify that the image and text are both inline-blocks first! You also need to still keep the vertical-align:top for the margin-top to take effect for whatever reason. (Actually in this specific case I ended up not needing margins that much, but I still needed to make everything inline-block for sizing and stuff and use vertical-align:top for .footer_headtext. Weird!)
+*/
+.footer_shrew {
+    width:150px;
+    height:auto;
+    margin-right:20px;
+    display: inline-block;
+}
+
+.footer_headtext {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.footer_copyright {
+    flex: 1 40%;
+    
+    font-size: .8rem;
+    font-weight:100;
+    
+}
+
+.footer_links {
+    flex: 1 50%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    justify-content: space-around;
+    margin-left:10%;
+}
+
+.footer_links1 {
+    flex: 1 30%;
+    font-size:1.25rem;
+}
+
+.footer_links2 {
+    flex: 1 30%;
+    font-size:1.25rem;
+    margin-left:10%;
+}
+
+
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+Q: So, this does a funny thing in firefox where it looks like it has barely any margins on the bottom. Maybe change it so that the box relies more on its own margins rather than the parent container's padding?
+*/
+.the_end {
+    text-align:center;
+    color:rgb(199, 129, 0);
+    background:black;
+    margin:50px 10px 10px 10px;
+    padding:30px;
+    border: 5px solid #c73e14;
+    border-radius:30px;
+}
+
+/* ~~~~~~^~~~~~ ~~~~~~^~~~~~ ~~~~~~^~~~~~
+WARNING: MEDIA QUERIES AHEAD
+~~~~~~^~~~~~ ~~~~~~^~~~~~ ~~~~~~^~~~~~ */
+
+
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+NOTE TO SELF: Do something with media queries for homepage.
+*/
+
+@media all and (max-width: 1265px) {
+    
+    #tableofcontents {
+        max-width: 1265px;
+        overflow: scroll;
+    }
+}
+
+
+/*(ʘ言ʘ╬)
+Q: This is no longer a relevant question since now I have 6 subpages, but in the original case of only 5, how would I make the Book of Proverbs align left and Beyond the Stage align right in the window between screen width: 550 and 800px?
+A: See the codepen I made called "Responsive Navigation Fix."
+*/
+@media all and (max-width: 1200px) {
+    .about { flex: 1 33%; }
+    .characters { flex: 1 33%; }
+    .texts { flex: 1 33%; }
+    .infographics { flex: 1 33%; }
+    .book { flex: 1 33%; }
+    .beyond { flex: 1 33%; }
+}
+
+@media all and (max-width: 700px) {
+    nav {flex-flow: column wrap;}
+    
+    #tableofcontents {
+        max-width: 700px;
+        overflow: scroll;
+    }
+
+    /*(ʘ言ʘ╬)
+    Q: How do I tell it to conflate .footer_links1 and .footer_links2 into 1 column (.footer_links) that takes up 50% of the window??? I tried placing both .footer_links1 and .footer_links2 into a container div class="footer_links" but that just made .footer_links1 and .footer_links2 always 1 column even when the window size was > 550px.
+    A: The trick is that the container class needs to also be a flexbox, and it is this nested flexbox that should change with the media query. In other words, you need to nest a flex within a flex, so that the inner flex can change to column-wrap while the outer one stays as row-wrap for the media query.
+    */
+    .footer_links {flex-flow: column wrap;}
+    
+    .footer_links2 {
+    margin-left:0%;
+}
+}
+
+@media (orientation: portrait) and (max-width: 550px) {
+    .popup {display: flex;}
+    
+    html, body {overflow:hidden;}
+}
+
+

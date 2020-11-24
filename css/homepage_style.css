@@ -1,0 +1,274 @@
+#homepage {
+    position:relative;
+    overflow:hidden;
+}
+
+#folio {
+    width: 100%;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 8vh;
+    background-color: black;
+    
+    text-align: center;
+    
+    position:relative;
+    
+    overflow:hidden;
+}
+
+.subpages {
+    position: absolute;
+    z-index: 1;
+    
+    top: 35%;
+}
+
+.subpages1 {
+    left:31%;
+}
+
+.subpages2 {
+    right:31%;
+}
+
+/*(ʘ言ʘ╬)
+Q: What is causing h3 to resize so strangely here? In the general style.css all I said was have it be 1.5rem, with rem being: 
+    font-size: calc(14px + 0.3vmax);
+A: Just change h3 to resize corresponding to the viewport and it'll keep its proportions that way. But remember to specify it to .subpages or else it'll affect all your h3!
+*/
+.subpages h3 {
+    font-size: 2.25vw;
+    line-height: 3;
+}
+
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+hover font-size change is buggy because of vw reliance
+*/
+.subpages h3:hover {
+    font-size:2.35vw;
+    transition:.5s;
+    
+}
+
+.shrew {
+    position:absolute;
+    z-index:2;
+    width: 15%; 
+    top: 18.5%;
+    
+    animation-duration: 3s;
+    animation-name: shrew;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shrew {
+  0% {
+    margin-left:-50%;
+  }
+
+  40% {
+    margin-left: 51%;
+  }
+    
+    60% {
+    margin-left: 51%;
+  }
+    
+    100% {
+    margin-left: 100%;
+  }
+}
+
+.happy_marriage {
+    position:absolute;
+    z-index:2;
+    width: 25%; 
+    top: 3%;
+    
+    animation-duration: 8s;
+    animation-name: happy_marriage;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes happy_marriage {
+  from {
+    margin-left:-50%;
+  }
+
+  to {
+    margin-left: 5%;
+  }
+}
+
+/*(ʘ言ʘ╬)
+Q: Animation-delay makes the image freeze on screen? So it's not hidden while it's frozen
+A: Make .fighting default to opacity: 0; and then in the animation keyframes itself set the opacity back to 1.
+*/
+.fighting {
+    position:absolute;
+    z-index:2;
+    width: 30%; 
+    left: 3%;
+    
+    animation-duration: 5s;
+    animation-name: fighting;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    animation-delay: 6s;
+}
+
+@keyframes fighting {
+    from {
+        opacity: 1;
+        margin-top: 150%;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: -50%;
+    }
+}
+
+.falconer {
+    position:absolute;
+    z-index:2;
+    width: 20%; 
+    top: 4%;
+    
+    animation-duration: 4s;
+    animation-name: falconer;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/*(ʘ言ʘ╬)
+NOTE: For whatever reason, using margin-right here causes errors. Stick to just "right" instead.
+*/
+@keyframes falconer {
+  from {
+    right: -25%;
+  }
+
+  to {
+    right: 3%;
+  }
+}
+
+.beating {
+    position:absolute;
+    z-index:2;
+    width: 30%; 
+    right: -2%;
+    
+    animation-duration: 5s;
+    animation-name: beating;
+    animation-iteration-count: infinite;
+}
+
+@keyframes beating {
+  from {
+    margin-top: 150%;
+  }
+
+  to {
+    margin-top: -50%;
+  }
+}
+
+.pinch_belly {
+    position:absolute;
+    z-index:2;
+    width: 30%; 
+    top: 65%;
+    
+    animation-duration: 10s;
+    animation-name: pinch_belly;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pinch_belly {
+  0% {
+    margin-left: 100%;
+  }
+    
+    20% {
+    margin-left: 30%;
+  }
+    
+    70% {
+    margin-left: 40%;
+  }
+
+  100% {
+    margin-left: -50%;
+  }
+}
+
+.walking_shrew {
+    position:absolute;
+    z-index:2;
+    width: 30%; 
+    right: -2%;
+    
+    animation-duration: 10s;
+    animation-name: walking_shrew;
+    animation-iteration-count: infinite;
+}
+
+@keyframes walking_shrew {
+  from {
+    margin-top: -50%;
+    
+  }
+
+  to {
+    margin-top: 150%;
+    
+  }
+}
+
+/*(ʘ言ʘ╬)
+Q: How can I round off the corners of #subheadings? Putting
+    border-radius: 1000px;
+into #subheadings doesn't work.
+
+A: The reason why the border-radius doesn't work when applied to the parent, #subheadings, is because the .subheads are the ones that are actually producing the bakcground-colors, not #subheadings. So applying border-radius to #subheadings won't affect the background-colors of the .subheads. In this case, you need to specifically target the .subheads. I did this with inline styling in the html.
+*/
+#subheadings {
+    width:100%;
+    max-width: 1500px;
+    padding: 0px 40px 40px 40px;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align:left;
+    
+}
+
+#subheadings .subhead:nth-child(odd) {
+    background-color: rgb(207,157,65);
+    padding:30px 20px;
+    margin:0px;
+    
+}
+
+#subheadings .subhead:nth-child(even) {
+    background-color: #701E04;
+    padding:30px 20px;
+    margin:0px;
+}
+
+#subheadings p {
+    max-width: 650px;
+    margin: auto;
+    padding: 0% 5%;
+    
+}
+
+#subheadings h4 {
+    text-align:center;
+    margin-top: -10px;
+}
+
