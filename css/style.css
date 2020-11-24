@@ -9,6 +9,7 @@ Q: Custom cursor doesn't work
 A: Cursor images have size limits, largest 128x128px and usually 32x32px. Also try making it square?
 A: It works at 128x128px!
 Q: Cursor doesn't align well???
+A:
 '*/ 
 /*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
 Q: Is there a way to tell the padding and font-size to just stop increasing at whatever their current sizes are? Or do I need to somehow calculate what the padding is and what the font-size is when min-width:1500px and specify those?
@@ -30,22 +31,34 @@ img {
     max-width:100%;
 }
 
-nav {
+.nav {
+    width:96%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     text-align:center;
-    justify-content: space-around;
+    
     background: black;
     padding: 20px 20px;
     margin: 0px;
+    background:blue;
+    
     
 }
 
-nav .title {flex: 1 100%;}
+nav .title {width:100%;margin:auto;margin-top:1em;}
+
+.nav > h5{
+  flex: 0 0 16.67%;
+    background: yellow;
+}
+
+.about, .characters, .texts, .infographics, .book, .beyond { flex: 0 0 16.67%; }
 
 nav h5 a {
     color:rgb(199, 129, 0);
 }
+
+
 
 /*(ʘ言ʘ╬)
 Q: How come it's not centering vertically?? Also it's not actually covering the entire screen??
@@ -277,16 +290,17 @@ Q: This is no longer a relevant question since now I have 6 subpages, but in the
 A: See the codepen I made called "Responsive Navigation Fix."
 */
 @media all and (max-width: 1200px) {
-    .about { flex: 1 33%; }
-    .characters { flex: 1 33%; }
-    .texts { flex: 1 33%; }
-    .infographics { flex: 1 33%; }
-    .book { flex: 1 33%; }
-    .beyond { flex: 1 33%; }
+    .nav {
+        flex-wrap:wrap;
+        text-align:center;
+        justify-content:center;
+    }
+    
+    .nav > h5 {flex: 0 0 33.3%;}
 }
 
 @media all and (max-width: 700px) {
-    nav {flex-flow: column wrap;}
+    .nav {flex-flow: column wrap;}
     
     #tableofcontents {
         max-width: 700px;

@@ -9,20 +9,15 @@ Q: What would be the better way of organizing the texts? Having each scene be it
 
 #rebus {}
 
-/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+/*(ʘ言ʘ╬)
 Q: I can't seem to get the two columns to just center in the page? This does nothing except somehow affect the <nav> before it. Changing the margin and margin-right in the #The_Shrew and #A_Shrew doesn't do anything either.
 A: add a new container for each #The_Shrew and #A_Shrew with a margin-right: auto and margin-left:auto
 Q: This doesn't change anything?
-A:
+A:To see how I solved this in detail, compare this css with draft4 and see what I changed. Most basically, I shifted the floats and widths from the inner/child ids (e.g. #The_Shrew) to the outer/parent classes (.The_Shrew_Container).
 */
-.texts {
-    margin-left:auto;
-    margin-right:auto;
-}
-
 #The_Shrew {
     background:url(../img_texts/background.png);
-    width:50%;
+    /*width:50%;*/
     max-width: 750px;
 
 
@@ -31,33 +26,43 @@ A:
     padding:min(80px, 5vw);
     border: 10px solid black;
     border-radius:50px;
-    margin-left:auto;
-    margin-right:auto;
+    margin:auto;
+
 }
 
 #A_Shrew {
     background:url(../img_texts/background.png);
-    float: left;
-    width:50%;
+    /*float: left;
+    width:50%;*/
     max-width: 750px;
 
-/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
-put this in the container? or the child
-*/
     height: 1000px;
     overflow:auto;
     padding:min(80px, 5vw);
     border: 10px solid black;
     border-radius:50px;
-    margin-left:auto;
-    margin-right:auto;
+    margin:auto;
+    /* margin-left:auto;
+    margin-right:auto; */
 }
 
-.A_Shrew_Container {margin-left:auto;
-    margin-right:auto;}
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+Q: Why must the containers both float left for it to work?
+A:
+*/
+.A_Shrew_Container {
+    /* margin-left:auto;
+    margin-right:auto; */
+    width:50%;
+    float:left;
+}
 
-.The_Shrew_Container {margin-left:auto;
-    margin-right:auto;}
+.The_Shrew_Container {
+    width:50%;
+    float:left;
+    /* margin-left:auto;
+    margin-right:auto; */
+}
 
 h2 {
     color: #c73e14;
