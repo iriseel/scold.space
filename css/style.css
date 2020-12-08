@@ -39,17 +39,15 @@ img {
     
     background: black;
     padding: 20px 20px;
-    margin: 0px;
-    background:blue;
+    margin: auto;
     
     
 }
 
 nav .title {width:100%;margin:auto;margin-top:1em;}
 
-.nav > h5{
+.nav > div{
   flex: 0 0 16.67%;
-    background: yellow;
 }
 
 .about, .characters, .texts, .infographics, .book, .beyond { flex: 0 0 16.67%; }
@@ -296,7 +294,7 @@ A: See the codepen I made called "Responsive Navigation Fix."
         justify-content:center;
     }
     
-    .nav > h5 {flex: 0 0 33.3%;}
+    .nav > div {flex: 0 0 33.3%;}
 }
 
 @media all and (max-width: 700px) {
