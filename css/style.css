@@ -73,10 +73,14 @@ A: I needed to change from position:absolute to position:fixed! And then for the
     
     padding: 50px;
     background: rgba(0, 0, 0, .75);
-    font-weight:bold;
     
     display: none;
     
+}
+
+.popup h3 {
+    font-size:24px;
+    line-height:1.5em;
 }
 
 h1, h2, h3, h4, h5 {
