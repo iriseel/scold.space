@@ -27,6 +27,11 @@ The .container is so that if you shrink the window too small, the trenchers won'
 /*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
 Q: Actually, is there a way to get rid of this container but make sure that all the objects resize in exact proportion to each other so that the trenchers never squeeze each other off the their rows and therefore disorganize the whole thing?
 A: Why don't you make a new html and css set and try making a position:relative container in which the trenchers and cutlery are position:absolute, and where all their units (height, width, padding, margin) are % rather than pixels or anything less responsive.
+A2: when looking at table of contents page, the reason this is not working is that you are:
+- forgetting that row/module structure. you are putting all these trencher and cutlery divs into container and not really dividing them on rows the way you are supposed to.
+- you are using inline-block… when you should be using float or flex
+- you are using imgs forks without putting them into divs. once again also using display:inline-block;
+- you are using br to make break all these images into spaces, when you should be using row divs to stack them one on top of the other (back to our grid). so the first 2 plates should be one row, then the other plates/trenchers and cutlery is another row and then the last two plates is the third row. and then if you need to add spaces between the rows you use margins and padding.
 */
 .container {
     min-width: 1265px;

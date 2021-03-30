@@ -27,7 +27,7 @@ function drop(event) {
   var data = event.dataTransfer.getData("Text");
   event.target.appendChild(document.getElementById(data));
     
-    document.getElementById("pinchbelly").src = "../img_pinchbelly/pinch_belly_with_woman.png";
+    document.getElementById("pinchbelly").src = "../img/img_pinchbelly/pinch_belly_with_woman.png";
 
     audio = new Audio("../audio/chomp.mp3");
     audio.play();

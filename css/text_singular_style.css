@@ -1,0 +1,92 @@
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+Q: What would be the better way of organizing the texts? Having each scene be its own html or have all scenes be in 1 big html and use this method to navigate?:
+    <h1 id="top">HTML Basics</h1>
+
+    <a href="#top">
+      Back to top
+    </a>
+*/
+.The_Shrew_Container {
+    position:relative;
+    width:calc(.9344*85vmin);
+    max-width:900px;
+    height:85vmin;
+    margin:auto;
+}
+
+.play_frame {
+    position:absolute;
+    z-index:1;
+    pointer-events:none;  
+    
+    top:-.5%;
+    left:-.7%;
+    height:85vmin; /* You must set a specified height */
+    
+    width:calc(.9344*85vmin);
+    
+    max-width:1000px;
+    background-image: url(../..img/img_text_singular/play_frame_muted.png); background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    
+}
+
+#The_Shrew {
+    /*width:50%;*/
+    position:relative;
+    width:calc(.9*85vmin);
+    height:66vmin;
+    background-color: rgb(239,225,213);
+    
+    padding:min(80px, 5vw);
+    border: 10px solid black;
+    border-radius:50px;
+    margin:auto;
+    
+    overflow:auto;
+}
+
+.head {
+    position:absolute;
+    z-index:2;
+    right:-10%;
+    width:30%;
+}
+
+.gallery {
+    position:absolute;
+    z-index:2;
+    width:10%;
+    max-width:150px;
+}
+
+.credit {
+    position:absolute;
+    z-index:1;
+    font-weight: 700;
+    font-size: 1.5em;
+    color:rgb(82,82,82);
+    right:5%;
+    width:150px;
+}
+
+.wunderkammer {
+    padding:400px;
+    background-image: url(../img/img_gallery/wunderkammer.jpeg);
+    background-size: cover;
+}
+
+h2 {
+    color: #c73e14;
+    line-height:1em;
+    text-align: center;
+
+}
+
+#The_Shrew p {
+    color:black;
+}  
+
+
+

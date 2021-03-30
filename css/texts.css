@@ -1,0 +1,334 @@
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+Q: What would be the better way of organizing the texts? Having each scene be its own html or have all scenes be in 1 big html and use this method to navigate?:
+    <h1 id="top">HTML Basics</h1>
+
+    <a href="#top">
+      Back to top
+    </a>
+*/
+#mode_controls {
+    width:35%;
+    max-width:525px;
+    height:5%;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items:center;
+    margin: auto;
+}
+
+#mode_controls * {
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: center;
+    width:14%;
+    height:100%;
+    margin: 0% 2%;
+}
+
+#rebus_controls {
+    background-image: url(../img/img_texts/rebus_controls.png);
+}
+
+#proverb_controls {
+    /*
+        !!!Unless under non-Folger copyright, images from Luna are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0). Use of Folger images under the CC BY-SA license does not require asking for additional permission, provided that you cite the Folger Shakespeare Library as the source and you license anything you create using the images under the same or equivalent license.
+    */
+    background-image: url(../img/img_texts/proverb_controls.png);
+    height:50%;
+}
+
+#prop_controls {
+    background-image: url(../img/img_texts/vase_yellow.svg);
+    height:78%;
+}
+
+#toggle_ashrew, #toggle_theshrew {
+    border-radius:.3em;
+    width:8em;
+    height:2em;
+}
+
+#toggle_theshrew h6, #toggle_ashrew h6 {
+    color:rgb(199, 129, 0);
+    font-size:1em;
+    width:97%;
+}
+
+/* to modify the #toggle_shrew buttons to reflect whether a corresponding text is turned on or off */
+.shrew_on {
+    background-color:rgb(120,58,42);
+    opacity:1;
+    transition:.5s;
+}
+
+.shrew_off {
+    background-color:none;
+    opacity:.5;
+    border:1px solid #A1721B;
+    transition:.5s;
+}
+
+#rebus_controls:hover, #prop_controls:hover, #proverb_controls:hover, #toggle_theshrew:hover, #toggle_ashrew:hover {
+    cursor:pointer;
+    filter:brightness(120%);
+}
+
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+Q: Do something about min-width?
+*/
+
+.plays {
+    position:relative;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:2.5%;
+    margin-bottom:5%;
+}
+
+.play {
+    position:relative;
+    margin:2%;
+    margin-top:0%;
+    width:46%;
+    max-width: 750px;
+}
+
+/*Sly watching*/
+.play_frame {
+    position:absolute; 
+    width:100%;
+    z-index:1;
+}
+
+.play_frame .closebtn {
+    position:absolute;
+    z-index:2;
+    top:12%;
+    left:1.8%;
+    width:9%;
+    height:7%; background:url(../img/img_texts/close_button.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.play_frame .closebtn:hover {
+    cursor:pointer; filter:brightness(120%);
+}
+
+/*(ʘ言ʘ╬)
+Q: I can't seem to get the two columns to just center in the page? This does nothing except somehow affect the <nav> before it. Changing the margin and margin-right in the #The_Shrew and #A_Shrew doesn't do anything either.
+A: add a new container for each #The_Shrew and #A_Shrew with a margin-right: auto and margin-left:auto
+Q: This doesn't change anything?
+A:To see how I solved this in detail, compare this css with draft4 and see what I changed. Most basically, I shifted the floats and widths from the inner/child ids (e.g. #The_Shrew) to the outer/parent classes (.The_Shrew_Container).
+*/
+/*this governs the actual play text*/
+.script {
+    position:relative;
+    width:76%;
+    overflow:auto;
+    /*A ROUGH CALCULATION BASED ON: calc(3607/2865 * 80%*46vw);*/
+    height: 48.3vw;
+    max-height: calc(3013/2865 * 750px);
+    padding:7%;
+    margin:auto;
+    margin-top:25.5%;
+    z-index:1;
+}
+
+ .ashrew.script {
+    /* calc(3607/2865 * 80%*46vw);*/
+    height: 47.3vw;
+    max-height: calc(2950/2865 * 750px);
+    margin-top:26.4%;
+}
+
+.script p {
+    color:black;
+}
+
+/*the image of a rebus*/
+.rebus {
+    background-repeat:no-repeat;
+    background-size:contain;
+    display:inline-block;
+}
+
+/*the insinuated word of a rebus*/
+.rebus_referent {
+    display:none;
+    text-decoration: underline dotted #c73e14 2px;
+}
+
+.rebus:hover, .rebus_referent:hover {
+    cursor:pointer;
+}
+
+.proverb {
+    /*
+        !!!Unless under non-Folger copyright, images from Luna are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0). Use of Folger images under the CC BY-SA license does not require asking for additional permission, provided that you cite the Folger Shakespeare Library as the source and you license anything you create using the images under the same or equivalent license.
+    */
+    position:absolute;
+    z-index:2;
+    background-image: url(../img/img_texts/proverb.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    width:1.5em;
+    height:1em;
+    left:.5%;
+    margin-top:1.5%;
+    
+}
+
+.props {
+    position:absolute;
+    z-index:0;
+    top:0;
+    width:25%;
+    /*background-image: url(../img/img_texts/props_bg.jpeg);
+    background-size: cover;*/
+}
+
+.props img {
+    display:inline-block;
+    width:30%;
+    max-width:150px;
+    display:none;
+}
+
+/*for the word that triggers the corresponding prop image*/
+.proptrigger {
+    position:relative;
+    z-index:1;
+    background-image: url(../img/img_texts/vase_black.svg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    width:1em;
+    height:1em;
+    left:0;
+    top:-.2em;
+    display:inline-block;
+}
+
+.proptrigger:hover {
+    cursor:pointer;
+}
+
+/*to indicate whether any given mode (e.g., rebus, proverb) is activated*/
+.on {
+    opacity:1;
+    transition:.5s;
+}
+
+.off {
+    opacity:.5;
+    transition:.5s;
+}
+
+/*table of contentments overlay-curtain menu*/
+.overlay {
+    height:0;
+    width:100%;
+    position:fixed;
+    z-index:3;
+    left:0;
+    top:0;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.9);
+    overflow-x:hidden;
+    transition:1.5s;
+}
+
+.overlay-content {
+    position:relative;
+    top:2%;
+    width:100%;
+    text-align:center;
+    margin-top:30px;
+}
+
+.overlay .closebtn {
+    position:absolute;
+    z-index:2;
+    top:20px;
+    right:45px;
+    font-size:60px;
+}
+
+.overlay .closebtn:hover {
+    color:#681901;
+}
+
+.trencherNav {
+    margin-left:-8%;
+    margin-top:-8%;
+    position:absolute;
+    z-index:2;
+    width:15%;
+    overflow:hidden;
+}
+
+.trencherNav:hover {
+    margin-left:2%;
+    margin-top:0%;
+    transition:1s;
+    cursor:pointer;
+}
+
+#tableofcontents {
+    position:relative;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.trencher_row {
+    width:100%;
+}
+
+.trencher {
+    position:relative;
+    margin: 2% 5%;
+    width:18%;
+    height:auto;
+    display:inline-block;
+}
+
+.scene_names {
+    position:absolute;
+    top:100%;
+    width:150%;
+    left:-25%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.cutlery {
+    position:absolute;
+    height:auto;
+    display: inline-block;
+    filter: drop-shadow(6px 9px 4px #784200);
+    top:3vh;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.fork {
+    width:18%;
+    left:-40%;
+    top:-20%;
+}
+
+.spoon {
+    width:30%;
+    right:-40%;
+    top:-10%;
+}
+
+.knife {
+    width:17%;
+    right:-60%;
+    top:-25%;
+}

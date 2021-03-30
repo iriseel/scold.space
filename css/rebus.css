@@ -1,0 +1,601 @@
+.ale {
+    background-image:url(../img/img_texts/rebus_icons/ale.png);
+    width:2.5em;
+    height:2em;
+}
+
+.alehouse {
+    background-image:url(../img/img_texts/rebus_icons/alehouse.png);
+    width:5em;
+    height:7em;
+}
+
+.back {
+    background-image:url(../img/img_texts/rebus_icons/back.png);
+    width:6em;
+    height:10em;
+    margin-bottom:-1em;
+}
+
+.baggage {
+    background-image:url(../img/img_texts/rebus_icons/baggage.png);
+    width:4em;
+    height:4.5em;
+    margin-right:-1em;
+    margin-bottom:-.5em;
+}
+
+.basin {
+    background-image:url(../img/img_texts/rebus_icons/basin.png);
+    width:5em;
+    height:2.5em;
+    margin-bottom:-.5em;
+}
+
+.beast {
+    background-image:url(../img/img_texts/rebus_icons/beast.png);
+    width:3.7em;
+    height:3em;
+}
+
+.bed {
+    background-image:url(../img/img_texts/rebus_icons/bed.png);
+    width:5em;
+    height:4em;
+    margin-bottom:-.5em;
+    margin-right:-.25em;
+}
+
+.bit {
+    background-image:url(../img/img_texts/rebus_icons/bit.png);
+    width:5em;
+    height:4em;
+    margin-bottom:-.5em;
+    margin-right:-.25em;
+}
+     
+.blood {
+    background-image:url(../img/img_texts/rebus_icons/blood.png);
+    width:5em;
+    height:4em;
+    margin-bottom:-.5em;
+    margin-right:-.75em;
+}
+
+.body {
+    background-image:url(../img/img_texts/rebus_icons/body.png);
+    width:5em;
+    height:3em;
+    margin-bottom:-.5em;
+}  
+
+.buttery {
+    background-image:url(../img/img_texts/rebus_icons/buttery.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+
+.carpet {
+    background-image:url(../img/img_texts/rebus_icons/carpet.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+
+.chamber {
+    background-image:url(../img/img_texts/rebus_icons/chamber.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.75em;
+}    
+
+.clothing {
+    background-image:url(../img/img_texts/rebus_icons/clothing.png);
+    width:5em;
+    height:3.3em;
+}    
+
+.collar {
+    background-image:url(../img/img_texts/rebus_icons/collar.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+
+.comedy, .play_rebus {
+    background-image:url(../img/img_texts/rebus_icons/play.png);
+    width:10em;
+    height:7em;
+    margin-bottom:-.5em;
+    margin-right:-.5em;
+}   
+
+.conserves, .preserves {
+    background-image:url(../img/img_texts/rebus_icons/conserves.png);
+    width:5em;
+    height:2em;
+    margin-bottom:-.5em;
+    margin-right:-.5em;
+}    
+
+.couch {
+    background-image:url(../img/img_texts/rebus_icons/couch.png);
+    width:4.5em;
+    height:3em;
+    margin-bottom:-.5em;
+}    
+
+.crust, .flesh {
+    background-image:url(../img/img_texts/rebus_icons/crust.png);
+    width:5em;
+    height:9.5em;
+    margin-bottom:-1em;
+}   
+
+.cup {
+    background-image:url(../img/img_texts/rebus_icons/cup.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+
+
+.deer {
+    background-image:url(../img/img_texts/rebus_icons/deer.png);
+    width:4em;
+    height:5em;
+    margin-bottom:-.5em;
+}    
+
+
+.door {
+    background-image:url(../img/img_texts/rebus_icons/door.png);
+    width:4em;
+    height:4.5em;
+    margin-bottom:-.5em;
+}    
+
+
+.doublet {
+    background-image:url(../img/img_texts/rebus_icons/doublet.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+
+
+.ewer, .jug {
+    background-image:url(../img/img_texts/rebus_icons/ewer.png);
+    width:4em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1em;
+}    
+
+
+.eye {
+    background-image:url(../img/img_texts/rebus_icons/eye.png);
+    width:3.5em;
+    height:2.5em;
+    margin-bottom:-.5em;
+}    
+
+
+.face_maiden {
+    background-image:url(../img/img_texts/rebus_icons/face_maiden.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+
+
+.face_man {
+    background-image:url(../img/img_texts/rebus_icons/face_man.png);
+    width:3.5em;
+    height:3.5em;
+    margin-bottom:-.5em;
+}    
+
+
+.finger {
+    background-image:url(../img/img_texts/rebus_icons/finger.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+
+
+.flower {
+    background-image:url(../img/img_texts/rebus_icons/flower.png);
+    width:3.5em;
+    height:4em;
+    margin-bottom:-.5em;
+    margin-right:-1em;
+}    
+
+
+.food {
+    background-image:url(../img/img_texts/rebus_icons/food.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+
+
+.foot {
+    background-image:url(../img/img_texts/rebus_icons/foot.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+
+
+.household_stuff {
+    background-image:url(../img/img_texts/rebus_icons/general_household_stuff.png);
+    width:5em;
+    height:4em;
+    margin-bottom:-.75em;
+}    
+
+
+.glass {
+    background-image:url(../img/img_texts/rebus_icons/glass.png);
+    width:5em;
+    height:2em;
+    margin-bottom:-.5em;
+}    
+
+
+.gold_chain {
+    background-image:url(../img/img_texts/rebus_icons/gold_chain.png);
+    width:4em;
+    height:5em;
+    margin-bottom:-.5em;
+}    
+
+
+.hand {
+    background-image:url(../img/img_texts/rebus_icons/hand.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}  
+
+.harness {
+    background-image:url(../img/img_texts/rebus_icons/harness.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-.5em;
+}    
+
+
+.hawking_gear {
+    background-image:url(../img/img_texts/rebus_icons/hawking_gear.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+
+
+.heart {
+    background-image:url(../img/img_texts/rebus_icons/heart.png);
+    width:2em;
+    height:2.5em;
+    margin-bottom:-.5em;
+}    
+
+
+.hedge {
+    background-image:url(../img/img_texts/rebus_icons/hedge.png);
+    width:2.8em;
+    height:4em;
+    margin-bottom:-.5em;
+}    
+
+
+.holinshed_chronicles {
+    background-image:url(../img/img_texts/rebus_icons/holinshed_chronicles.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+
+/*
+.horns {
+    background-image:url(../img/img_texts/rebus_icons/.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+*/
+
+.horse {
+    background-image:url(../img/img_texts/rebus_icons/horse.png);
+    width:4.6em;
+    height:4em;
+    margin-bottom:-.25em;
+}    
+
+
+.hound {
+    background-image:url(../img/img_texts/rebus_icons/hound.png);
+    width:4em;
+    height:4em;
+    margin-bottom:-.5em;
+    margin-right:-.25em;
+}    
+
+
+.house {
+    background-image:url(../img/img_texts/rebus_icons/house.png);
+    width:4em;
+    height:5em;
+    margin-bottom:-.25em;
+    margin-right:-.5em;
+}    
+
+
+.hunting_gear {
+    background-image:url(../img/img_texts/rebus_icons/hunting_gear.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+
+
+.leash {
+    background-image:url(../img/img_texts/rebus_icons/leash.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+
+
+.leg {
+    background-image:url(../img/img_texts/rebus_icons/leg.png);
+    width:3.5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+  
+
+.meal {
+    background-image:url(../img/img_texts/rebus_icons/meal.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+  
+
+.music_performed, .music_played {
+    background-image:url(../img/img_texts/rebus_icons/music_performed.png);
+    width:4.5em;
+    height:9em;
+    margin-bottom:-1em;
+    margin-left:-.5em;
+}    
+  
+.musical_instruments {
+    background-image:url(../img/img_texts/rebus_icons/musical_instruments.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+
+.napkin {
+    background-image:url(../img/img_texts/rebus_icons/napkin.png);
+    width:2em;
+    height:3.5em;
+    margin-bottom:-.5em;
+}    
+  
+.nightingale {
+    background-image:url(../img/img_texts/rebus_icons/nightingale.png);
+    width:3em;
+    height:3em;
+    margin-bottom:-.25em;
+}    
+  
+.onion {
+    background-image:url(../img/img_texts/rebus_icons/onion.png);
+    width:4em;
+    height:1.5em;
+    margin-bottom:-.5em;
+}    
+  
+
+.overleather, .over-leather {
+    background-image:url(../img/img_texts/rebus_icons/overleather.png);
+    width:4.5em;
+    height:3em;
+    margin-bottom:-.5em;
+    margin-right:-.25em;
+}    
+  
+
+.painting, .picture {
+    background-image:url(../img/img_texts/rebus_icons/painting.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+  
+.pearl {
+    background-image:url(../img/img_texts/rebus_icons/pearl.png);
+    width:3em;
+    height:3em;
+    margin-bottom:-.5em;
+}    
+  
+
+.pence {
+    background-image:url(../img/img_texts/rebus_icons/pence.png);
+    width:3em;
+    height:3em;
+    margin-bottom:-.5em;
+}    
+
+
+.pig {
+    background-image:url(../img/img_texts/rebus_icons/pig.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+
+
+.pot {
+    background-image:url(../img/img_texts/rebus_icons/pot.png);
+    width:3em;
+    height:4em;
+    margin-bottom:-.5em;
+}    
+
+
+.pound {
+    background-image:url(../img/img_texts/rebus_icons/pound.png);
+    width:3em;
+    height:3em;
+    margin-bottom:-.5em;
+}    
+
+.quart {
+    background-image:url(../img/img_texts/rebus_icons/quart.png);
+    width:3em;
+    height:4em;
+    margin-bottom:-.5em;
+    margin-right:-.5em;
+}    
+  
+
+.ring {
+    background-image:url(../img/img_texts/rebus_icons/ring.png);
+    width:2.25em;
+    height:2.75em;
+    margin-bottom:-.5em;
+}    
+
+
+.saddle {
+    background-image:url(../img/img_texts/rebus_icons/saddle.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+
+
+.script_rebus {
+    background-image:url(../img/img_texts/rebus_icons/script.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+  
+
+.shoe {
+    background-image:url(../img/img_texts/rebus_icons/shoe.png);
+    width:4.5em;
+    height:2.5em;
+    margin-bottom:-.5em;
+    margin-right:-.25em;
+}    
+  
+
+.spleen {
+    background-image:url(../img/img_texts/rebus_icons/spleen.png);
+    width:5em;
+    height:10em;
+    margin-bottom:-.5em;
+    margin-right:-.5em;
+}    
+  
+
+.stockings {
+    background-image:url(../img/img_texts/rebus_icons/stockings.png);
+    width:3.5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1em;
+}    
+
+
+.stocks {
+    background-image:url(../img/img_texts/rebus_icons/stocks.png);
+    width:3em;
+    height:4em;
+}    
+  
+
+.tear {
+    background-image:url(../img/img_texts/rebus_icons/tear.png);
+    width:1em;
+    height:2.5em;
+    margin-bottom:-.25em;
+}    
+  
+
+.toe {
+    background-image:url(../img/img_texts/rebus_icons/toe.png);
+    width:4.5em;
+    height:5em;
+    margin-bottom:-.5em;
+}    
+  
+
+.trumpet {
+    background-image:url(../img/img_texts/rebus_icons/trumpet.png);
+    width:5em;
+    height:2.5em;
+    margin-bottom:-1em;
+}    
+
+
+.water {
+    background-image:url(../img/img_texts/rebus_icons/water.png);
+    width:3.75em;
+    height:3em;
+    margin-bottom:-.5em;
+}    
+  
+
+.wine {
+    background-image:url(../img/img_texts/rebus_icons/wine.png);
+    width:5em;
+    height:5em;
+    margin-bottom:-.5em;
+    margin-right:-1.5em;
+}    
+  
+
+.wood {
+    background-image:url(../img/img_texts/rebus_icons/wood.png);
+    width:4em;
+    height:3em;
+    margin-bottom:-.5em;
+}    
+  

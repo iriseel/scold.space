@@ -50,7 +50,8 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
     <meta name="author" content="Siri Lee">
     
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/texts_style.css">
+    <link rel="stylesheet" href="../css/texts.css">
+    <link rel="stylesheet" href="../css/rebus.css">
     
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../favicon_package/apple-touch-icon.png">
@@ -69,50 +70,221 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
         <h3>To experience this website as intended, please change your device to landscape orientation or a laptop.</h3>
     </div>
     
-    <nav>
-        <div class="title">
-            <h4><a href="../index.html">Beshrew Me</a></h4> 
+    <div id="bookmark" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        <div class="overlay-content">
+        
+            <section id="tableofcontents">
+    
+                <h1 style="font-size:3rem">Table of Contentments</h1>
+
+                <div class="trencher_row">
+
+                    <div class="trencher">
+                            <a href="texts.html#induction_scene1_theshrew#induction_scene1_ashrew">
+                                <img src="../img/img_tableofcontents/Induction%20-%20Sly%20&%20Lord.png" alt="Induction - Sly & Lord trencher">
+                            </a>
+                        
+                            <div class="scene_names">
+                                <a href="#">Induction Scene I</a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="#">Induction Scene II</a>
+                            </div>
+                    </div>
+
+                    <div class="trencher">
+
+                            <a href="texts.html">
+                                <img src="../img/img_tableofcontents/Act%20I%20-%20Petruchio.png" alt="Act I - Petruchio trencher">
+                            </a>
+                        
+                            <div class="scene_names">
+                                <a href="#">Act I Scene I</a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="#">Act I Scene II</a>
+                            </div>
+                    </div>
+                </div>
+                    
+                <div class="trencher_row">
+
+                    <div class="trencher">
+                        
+                        <div class="cutlery fork">
+                            <img src="../img/img_tableofcontents/medieval_fork.png" alt="a metal fork">
+                        </div>
+
+                        <a href="texts.html#act5_scene2_theshrew">
+                            <img src="../img/img_tableofcontents/Act%20V%20-%20Kate's%20speech.png" alt="Act V - Kate's speech trencher">
+                        </a>
+
+                        <div class="scene_names">
+                            <a href="#">Act V Scene I</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#">Act V Scene II</a>
+                        </div>
+                    </div>
+
+                    <!--(ʘ言ʘ╬)s
+                    Q: Why do I have to re-specify width for this trencher when I've already done so in .trencher?
+                    A: Because actually, this is neither .trencher .back nor .trencher .front; it's the invisible trencher with the "hidden" class
+                    -->
+                    <div class="trencher">
+                        <img src="../img/img_tableofcontents/trencher%20back.png" alt="" width="18%" height="auto" class="hidden">
+                    </div>
+
+                    <div class="trencher">
+
+                        <a href="texts.html">
+                            <img src="../img/img_tableofcontents/Act%20II%20-%20Kate%20meets%20Petruchio.png" alt="Act II - Kate meets Petruchio trencher">
+                        </a>
+
+                        <div class="scene_names">
+                            <a href="#">Act II Scene I</a>
+                        </div>
+                    
+                        <div class="cutlery spoon">
+                          <img src="../img/img_tableofcontents/medieval_spoon.png" alt="a metal spoon">
+                        </div>
+                        <div class="cutlery knife">
+                            <img src="../img/img_tableofcontents/medieval_knife.png" alt="a metal knife">
+                        </div>
+                        
+                    </div>
+
+                </div>
+                    
+                <div class="trencher_row">
+
+                    <div class="trencher">
+
+                            <a href="texts.html">
+                                <img src="../img/img_tableofcontents/Act%20IV%20-%20The%20ride%20home.png" alt="Act IV - The ride home trencher">
+                            </a>
+                        
+                            <div class="scene_names">
+                                <a href="#">Act IV Scene I</a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="#">Act IV Scene II</a>
+                                <br>
+                                <a href="#">Act IV Scene III</a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="#">Act IV Scene IV</a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="#">Act IV Scene V</a>
+                            </div>
+                    </div>
+
+                    <div class="trencher">
+                            <a href="texts.html">
+                                <img src="../img/img_tableofcontents/Act%20III%20-%20Lucentio%20&%20Bianca.png" alt="Act III - Lucentio & Bianca trencher">
+                            </a>
+                        
+                            <div class="scene_names">
+                                <a href="#">Act III Scene I</a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="#">Act III Scene II</a>
+                            </div>
+                    </div>
+
+                </div>
+                <br><br><br><br>  
+            </section>
+            
         </div>
+    </div>
+    
+    <div class="trencherNav">
+        <span onclick="openNav()"><img src="../img/img_tableofcontents/Induction%20-%20Sly%20&%20Lord.png"></span>
+    </div>
+    
+    <nav>
         <div class="nav">
-            <div class="about">
-                <h5><a href="" class="notready">About the Project</a></h5>
+            <div class="title">
+                <h6><a href="../index.html">Beshrew Me</a></h6> 
             </div>
-            <div class="characters">
-                <h5><a href="" class="notready">Characters</a></h5>
+            <div class="about">
+                <h6><a href="" class="notready">About the Project</a></h6>
             </div>
             <div class="texts">
-               <h5><a href="tableofcontents.html" class="current">Texts</a></h5>
+               <h6><a href="tableofcontents.html" class="current">Texts</a></h6>
+            </div>
+            <div class="characters">
+                <h6><a href="" class="notready">Characters</a></h6>
             </div>
             <div class="infographics">
-                <h5><a href="" class="notready">Infographics</a> </h5>
+                <h6><a href="" class="notready">Infographics</a> </h6>
             </div>
             <div class="book">
-                <h5><a href="" class="notready">Book of Proverbs</a></h5>
+                <h6><a href="" class="notready">Book of Proverbs</a></h6>
             </div>
             <div class="beyond">
-                <h5><a href="objects.html">Beyond the Stage</a></h5>
+                <h6><a href="objects.html">Beyond the Stage</a></h6>
             </div>
         </div>
     </nav>
     
-    <div class="texts">
-        <div class="A_Shrew_Container">
-            <section id="A_Shrew">
-                <div class="text_opening" id="induction_scene1_ashrew">
-                    <h4 style="color:#c73e14"><em>A Pleasant Conceited Historie, Called the Taming of a Shrew</em></h4>
-                    <h5 style="color:rgb(207,157,65);">INDUCTION</h5>
-                    <h5>Scene I</h5>
+    <div id="mode_controls">
+        <div id="rebus_controls" title="rebus mode"  onclick="rebusSwitch()"></div>
+        <div id="proverb_controls" title="proverb mode"  onclick="proverbSwitch()"></div>
+        <div id="prop_controls" title="prop closet"  class="off" onclick="propSwitch()"></div>
+        
+        <div id="toggle_ashrew" class="shrew_on" title="toggle A Shrew"  onclick="toggle_ashrew()"><h6>A Shrew</h6></div>
+        <div id="toggle_theshrew" class="shrew_on" title="toggle The Shrew" onclick="toggle_theshrew()"><h6>The Shrew</h6></div>
+    </div>
+    
+    <div class="plays">
+        <div class="play ashrew">
+            <div class="play_frame">
+                <div class="closebtn" title="close"  onclick="close_ashrew()"></div>
+                <img src="../img/img_texts/ashrew_trencher_frame_sly.png">
+            </div>
+            <div class="script ashrew">
+                <div id="induction_scene1_ashrew">
+                    <h5>INDUCTION</h5>
+                    <h6>Scene I</h6>
                 </div>
+                <br>
+                
+                
                 <p>
-                    <em>[Before an alehouse in the country.] <br>
-                    Enter a Tapster, beating out of his doors Sly drunk. </em><br>
+                    <em>[Before an 
+                        
+                        <span class="rebus alehouse"></span>
+                        <span class="rebus_referent">alehouse</span>
+                        
+                        in the country.] <br>
+                        Enter a Tapster, beating out of his 
 
+                        <span class="rebus door"></span>
+                        <span class="rebus_referent">door</span>s
+
+                        Sly drunk. 
+                    </em>
+                    <br>
+                    
+                    <span class="proverb"></span>
+                
                     Tapster. Ton. whoreson drunken slave ! you had best be gone, <br>
                     And empty your drunken paunch somewhere else, <br>
-                    For in this house thou shalt not rest to-night.<br> [Exit Tapster. 
+                    For in this  
+                    
+                    <span class="rebus house"></span>
+                    <span class="rebus_referent">house</span>
+                  
+                    thou shalt not rest to-night.<br> [Exit Tapster. 
 
                     Sly. Tilly vally, by crisee, Tapster, Vll feeze you anon! <br>
-                    Fill's the father pot, and all y s paid for ! look you, I do drink it<br> 
+                
+                    <span class="proverb"></span>
+                
+                    Fill's the father 
+                    
+                    <span class="rebus pot"></span>
+                    <span class="rebus_referent">pot</span>,
+                    
+                    and all y s paid for ! look you, I do drink it<br> 
                     of mine own instigation. Omne bene : here Vll lie awhile : why,<br> 
                     Tapster, I say, fill's a fresh cushion here ! Heigh ho, here J s<br> 
                     good warm lying. [He falls asleep.<br><br> 
@@ -125,29 +297,57 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
                     And dims the welkin with her pitchy breath,<br>
                     And darksome night o'crshadcs the crystal heavens, <br>
                     Here break we off our hunting for to-night: <br>
-                    Couple up the hounds and let us hie us home,<br> 
+                    Couple up the 
+                    
+                    <span class="rebus hound"></span>
+                    <span class="rebus_referent">hound</span>s
+                    
+                    and let us hie us home,<br> 
                     And bid the huntsmen see them meated well,<br>
                     For they have all deserved it well to-day.<br> 
                     But soft, what sleepy fellow is this lies here ? <br>
                     Or is ht dead? See one what he doth lack.<br> 
 
                     Serving-man. My lord, 'tis nothing but a drunken sleep; his <br>
-                    head is too heavy for his body, and he hath drunk so much that he <br>
+                    head is too heavy for his 
+                    
+                    <span class="rebus body"></span>
+                    <span class="rebus_referent">body</span>,
+                    
+                    and he hath drunk so much that he <br>
                     can go no furder. <br>
 
                     Lord. Fie, how the slavish villain stinks of drink! <br>
                     Ho, sirrah, arise! What, so sound asleep?<br>
 
-                    Go, take him up and bear him to my house, 
+                    Go, take him up and bear him to my  
+                    
+                    <span class="rebus house"></span>
+                    <span class="rebus_referent">house</span>,
+                  
                     And bear him easily for fear he wake, 
-                    And in my fairest chamber make a fire, 
+                    And in my fairest 
+                    
+                    <span class="rebus chamber"></span>
+                    <span class="rebus_referent">chamber</span>
+                    
+                    make a fire, 
 
                     Aud set a sumptuous banquet on the board, 28 
 
-                    And put my richest garments on his back; 
+                    And put my richest garments on his  
+                    
+                    <span class="rebus back"></span>
+                    <span class="rebus_referent">back</span>;
+                     
                     Then set him at the table in a chair. 
                     When this is done, against he shall awake, 
-                    Let heavenly music play about him still: 3 2 
+                    Let heavenly 
+                    
+                    <span class="rebus music_played"></span>
+                    <span class="rebus_referent">music</span>
+                    
+                    play about him still: 3 2 
 
                     Go two of you away and bear him hence, 
                     And then I 'II tell you what I have devised; 
@@ -163,9 +363,17 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
 
                     THE TAMING OF A SHREW 3 
 
-                    With heavenly music sounding in his ears, 
+                    With heavenly 
+                    
+                    <span class="rebus music_played"></span>
+                    <span class="rebus_referent">music</span>
+                    
+                    sounding in his ears, 
 
-                    And such a banquet set before his eyes, 
+                    And such a banquet set before his 
+                    
+                    <span class="rebus eye"></span>
+                    <span class="rebus_referent">eye</span>s, 
 
                     The fellow sure will think he is in heaven ; 
 
@@ -173,9 +381,22 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
 
                     And see you call him ' /ora" at every word, 
 
-                    And offer thou him his horse to ride abroad, 
+                    And offer thou him his 
+                    
+                    <span class="rebus horse"></span>
+                    <span class="rebus_referent">horse</span>
+                    
+                    to ride abroad, 
 
-                    And thou his hawks and hounds to hunt the deer, 
+                    And thou his hawks and 
+                    
+                    <span class="rebus hound"></span>
+                    <span class="rebus_referent">hound</span>s
+                    
+                    to hunt the 
+                    
+                    <span class="rebus deer"></span>
+                    <span class="rebus_referent">deer</span>,
 
                     And I will ask what suits he means to wear, 48 
 
@@ -193,7 +414,12 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
                     Now will I fit myself accordingly, 
                     For they shall play to him when he awakes. 56 
 
-                    Enter two of the players with packs at their backs, and 
+                    Enter two of the players with packs at their 
+                    
+                    <span class="rebus back"></span>
+                    <span class="rebus_referent">back</span>s, 
+                    
+                    and 
                     a boy. 
 
                     Now, sirs, what store of plays have you ? 
@@ -201,14 +427,22 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
                     San. Marry, my lord, you may have a tragical, or a comodity, 
                     or what you will. 
 
-                    The other. A comedy, thou should' 'st say; souns, though 
+                    The other. A 
+                    
+                    <span class="rebus comedy"></span>
+                    <span class="rebus_referent">comedy</span>,
+                    
+                    thou should' 'st say; souns, though 
                     shame us all. 
 
 
 
                     4 THE TAMING OF A SHREW 
 
-                    Lord. And what's the name of your comedy? 
+                    Lord. And what's the name of your 
+                    
+                    <span class="rebus comedy"></span>
+                    <span class="rebus_referent">comedy</span>?
 
                     San. Marry, my lord, 'tis called 1 The Taming of a Shrew' f 
                     'tis a good lesson for us, my lord, for us that are married men. 64 
@@ -240,7 +474,11 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
                     San. O brave, sirrah Tom, we must play before 
                     A foolish lord, come, let's go make us ready; 84 
 
-                    Go get a dishclout to make clean your shoes, 
+                    Go get a dishclout to make clean your 
+                    
+                    <span class="rebus shoe"></span>
+                    <span class="rebus_referent">shoe</span>s,
+                    
                     And I'll speak for the properties. My lord, we must 
                     Have a shoulder of mutton for a property, 
                     And a little vinegar to make our devil roar. 88 
@@ -251,31 +489,45 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
                     Now that you have finished the play ... which of the ladies and gents do you think truly make for good or bad spouses? <br>
                     <a href="pinchbelly.html">Deliver your judgement here!</a>
                 </div>
-            </section>
+            </div>
         </div>
     
-        <div class="The_Shrew_Container">
-            <section id="The_Shrew">
-                <div class="text_opening" id="induction_scene1_theshrew">
-                    <h4 style="color:#c73e14"><em>The Taming of the Shrew</em></h4>
-
-                    <!--(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
-                    Q: this is to make both texts still start at the same line, but it doesn't work well once the screen size gets smaller
-                    A: -->
-                    <h4 style="margin-top: -.4em; padding-top: -.4em;line-height:1.5rem;visibility:hidden;">this is just filler</h4>
-                    <h5 style="color:rgb(207,157,65);">INDUCTION</h5>
-                    <h5>Scene I</h5>
+        <div class="play theshrew">
+            <div class="play_frame">
+                <div class="closebtn" title="close"  onclick="close_theshrew()"></div>
+                <img src="../img/img_texts/theshrew_trencher_frame_sly.png">
+            </div>
+            <div class="script">
+                <div id="induction_scene1_theshrew">
+                    <h5>INDUCTION</h5>
+                    <h6>Scene I</h6>
                 </div>
+                <br>
                 <p>
-                    <em>Enter Beggar (Christopher Sly) and Hostess.</em><br>
-
+                    <span style="text-align:center; display:block;"><em>Enter Beggar (Christopher Sly) and Hostess.</em></span><br>
+                    
                     SLY  I’ll feeze you, in faith.<br>
-                    HOSTESS  A pair of stocks, you rogue!<br>
-                    SLY  You’re a baggage! The Slys are no rogues. Look<br>
+                    HOSTESS  A pair of 
+                    
+                    <span class="rebus stocks"></span>
+                    <span class="rebus_referent">stocks</span>,
+                  
+                    you rogue!<br>
+                    SLY  You’re a 
+                    
+                    <span class="rebus baggage"></span>
+                    <span class="rebus_referent">baggage</span>!
+                    
+                    The Slys are no rogues. Look<br>
                     in the chronicles. We came in with Richard Conqueror.<br>
                     Therefore, paucas pallabris, let the world<br>
                     slide. Sessa!<br>
-                    HOSTESS  You will not pay for the glasses you have<br>
+                    HOSTESS  You will not pay for the 
+                    
+                    <span class="rebus glass"></span>
+                    <span class="rebus_referent">glass</span>es 
+                    
+                    you have<br>
                     burst?<br>
                     SLY  No, not a denier. Go, by Saint<br> Jeronimy! Go to<br>
                     thy cold bed and warm thee.	<em>He lies down.</em><br>
@@ -288,12 +540,25 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
                     <em>Wind horns within. Enter a Lord from hunting, with his train.</em><br><br>
 
                     LORD
-                    Huntsman, I charge thee tender well my hounds.<br>
+                    Huntsman, I charge thee tender well my 
+                    
+                    <span class="rebus hound"></span>
+                    <span class="rebus_referent">hound</span>s.<br>
+                    
                     Breathe Merriman (the poor cur is embossed)<br>
                     And couple Clowder with the deep-mouthed brach.<br>
                     Saw’st thou not, boy, how Silver made it good<br>
-                    At the hedge corner, in the coldest fault?<br>
-                    I would not lose the dog for twenty pound!<br>
+                    At the 
+                    
+                    <span class="rebus hedge"></span>
+                    <span class="rebus_referent">hedge</span>
+                    
+                    corner, in the coldest fault?<br>
+                    I would not lose the dog for twenty 
+                    
+                    <span class="rebus pound"></span>
+                    <span class="rebus_referent">pound</span>!<br>
+                    
                     FIRST HUNTSMAN
                     Why, Bellman is as good as he, my lord.<br>
                     He cried upon it at the merest loss,<br>
@@ -310,16 +575,55 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
                     What’s here? One dead, or drunk? See doth he<br>
                     breathe.<br>
                     SECOND HUNTSMAN
-                    He breathes, my lord. Were he not warmed<br> with ale,<br>
-                    This were a bed but cold to sleep so<br> soundly.<br>
+                    He breathes, my lord. Were he not warmed<br> with 
+                    
+                    <span class="rebus ale"></span>
+                    <span class="rebus_referent">ale</span>,
+                    
+                    <br>
+                    This were a 
+                    
+                    <span class="rebus bed"></span>
+                    <span class="rebus_referent">bed</span>
+                    
+                    but cold to sleep so<br> soundly.<br>
                     LORD
-                    O monstrous beast, how like a swine he lies!<br>
+                    O monstrous 
+                    
+                    <span class="rebus beast"></span>
+                    <span class="rebus_referent">beast</span>,
+                    
+                    how like a swine he lies!<br>
                     Grim death, how foul and loathsome is thine image!<br>
                     Sirs, I will practice on this drunken man.<br>
-                    What think you, if he were conveyed to bed,<br>
-                    Wrapped in sweet clothes, rings put upon his
-                    fingers,<br>
-                    A most delicious banquet by his bed,<br>
+                    What think you, if he were conveyed to
+                    
+                    <span class="rebus bed"></span>
+                    <span class="rebus_referent">bed</span>,
+                    
+                    <br>
+                    Wrapped in sweet 
+                    
+                    <span class="rebus clothing"></span>
+                    <span class="rebus_referent">clothes</span>,
+                    
+                    
+                    <span class="rebus ring"></span>
+                    <span class="rebus_referent">ring</span>s
+                    
+                    put upon his
+                     
+                    
+                    <span class="rebus finger"></span>
+                    <span class="rebus_referent">finger</span>s,
+                    
+                    <br>
+                    A most delicious banquet by his 
+                    
+                    <span class="rebus bed"></span>
+                    <span class="rebus_referent">bed</span>,
+                    
+                    <br>
                     And brave attendants near him when he wakes,<br>
                     Would not the beggar then forget himself?<br>
                     THIRD HUNTSMAN
@@ -329,23 +633,70 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
                     LORD
                     Even as a flatt’ring dream or worthless fancy.<br>
                     Then take him up, and manage well the jest.<br>
-                    Carry him gently to my fairest chamber,<br>
+                    Carry him gently to my fairest 
+                    
+                    <span class="rebus chamber"></span>
+                    <span class="rebus_referent">chamber</span>,
+                    
+                    <br>
                     And hang it round with all my wanton pictures;<br>
-                    Balm his foul head in warm distillèd waters,<br>
-                    And burn sweet wood to make the lodging sweet;<br>
-                    Procure me music ready when he wakes<br>
+                    Balm his foul head in warm distillèd 
+                        
+                    <span class="rebus water"></span>
+                    <span class="rebus_referent">water</span>s,<br>
+                  
+                    And burn sweet 
+                    
+                    <span class="rebus wood"></span>
+                    <span class="rebus_referent">wood</span>
+                    
+                    to make the lodging sweet;<br>
+                    Procure me 
+                    
+                    <span class="rebus music_played"></span>
+                    <span class="rebus_referent">music</span>
+                    
+                    ready when he wakes<br>
                     To make a dulcet and a heavenly sound.<br>
                     And if he chance to speak, be ready straight<br>
                     And, with a low, submissive reverence,<br>
                     Say “What is it your Honor will command?”<br>
-                    Let one attend him with a silver basin<br>
-                    Full of rosewater and bestrewed with flowers,<br>
-                    Another bear the ewer, the third a diaper,<br>
+                    Let one attend him with a silver
+                    
+                    <span class="rebus basin"></span>
+                    <span class="rebus_referent">basin</span>
+                    <span class="proptrigger basinprop"></span> 
+                    
+                    <br>
+                    Full of rosewater and bestrewed with 
+                    
+                    <span class="rebus flower"></span>
+                    <span class="rebus_referent">flower</span>s,
+                    
+                    <br>
+                    Another bear the 
+                    
+                    <span class="rebus ewer"></span>
+                    <span class="rebus_referent">ewer</span>,
+                    
+                    the third a diaper,<br>
                     And say “Will ’t please your Lordship cool your
-                    hands?”<br>
+                    
+                    <span class="rebus hand"></span>
+                    <span class="rebus_referent">hand</span>s?”
+                    
+                    <br>
                     Someone be ready with a costly suit,<br>
                     And ask him what apparel he will wear.<br>
-                    Another tell him of his hounds and horse,<br>
+                    Another tell him of his 
+                    
+                    <span class="rebus hound"></span>
+                    <span class="rebus_referent">hound</span>s
+                    and 
+                    
+                    <span class="rebus horse"></span>
+                    <span class="rebus_referent">horse</span>,<br>
+                   
                     And that his lady mourns at his disease.<br>
                     Persuade him that he hath been lunatic,<br>
                     And when he says he is, say that he dreams,<br>
@@ -358,11 +709,26 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
                     As he shall think by our true diligence<br>
                     He is no less than what we say he is.<br>
                     LORD
-                    Take him up gently, and to bed with him,<br>
+                    Take him up gently, and to 
+                    
+                    <span class="rebus bed"></span>
+                    <span class="rebus_referent">bed</span>
+                    
+                    with him,<br>
                     And each one to his office when he wakes.<br>
                     <em>Sly is carried out.</em><br>
-                    <em>Sound trumpets within.</em><br>
-                    Sirrah, go see what trumpet ’tis that sounds.<br>
+                    <em>Sound 
+                        
+                    <span class="rebus trumpet"></span>
+                    <span class="rebus_referent">trumpet</span>s
+                  
+                    within.</em><br>
+                    Sirrah, go see what 
+                        
+                    <span class="rebus trumpet"></span>
+                    <span class="rebus_referent">trumpet</span>
+                  
+                    ’tis that sounds.<br>
                     <em>Servingman exits.</em><br>
                     Belike some noble gentleman that means<br>
                     (Traveling some journey) to repose him here.<br><br>
@@ -384,7 +750,12 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
                     FIRST PLAYER
                     So please your Lordship to accept our duty.
                     LORD
-                    With all my heart. This fellow I remember
+                    With all my 
+                    
+                    <span class="rebus heart"></span>
+                    <span class="rebus_referent">heart</span>.
+                    
+                    This fellow I remember
                     Since once he played a farmer’s eldest son.—
                     ’Twas where you wooed the gentlewoman so well.
                     I have forgot your name, but sure that part
@@ -394,7 +765,11 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
                     LORD
                     ’Tis very true. Thou didst it excellent.
                     Well, you are come to me in happy time,
-                    The rather for I have some sport in hand
+                    The rather for I have some sport in 
+                    
+                    <span class="rebus hand"></span>
+                    <span class="rebus_referent">hand</span>
+                    
                     Wherein your cunning can assist me much.
                     There is a lord will hear you play tonight;
                     But I am doubtful of your modesties,
@@ -407,13 +782,26 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
                     Fear not, my lord, we can contain ourselves
                     Were he the veriest antic in the world.
                     LORD, to a Servingman
-                    Go, sirrah, take them to the buttery
+                    Go, sirrah, take them to the 
+                    
+                    <span class="rebus buttery"></span>
+                    <span class="rebus_referent">buttery</span>
+                    
                     And give them friendly welcome every one.
-                    Let them want nothing that my house affords.
+                    Let them want nothing that my  
+                    
+                    <span class="rebus house"></span>
+                    <span class="rebus_referent">house</span>
+                  
+                    affords.
                     One exits with the Players.
                     Sirrah, go you to Bartholomew, my page,
                     And see him dressed in all suits like a lady.
-                    That done, conduct him to the drunkard’s chamber,
+                    That done, conduct him to the drunkard’s 
+                    
+                    <span class="rebus chamber"></span>
+                    <span class="rebus_referent">chamber</span>,
+                    
                     And call him “Madam,” do him obeisance.
                     Tell him from me, as he will win my love,
                     He bear himself with honorable action,
@@ -426,15 +814,38 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
                     May show her duty and make known her love?”
                     And then with kind embracements, tempting kisses,
                     And with declining head into his bosom,
-                    Bid him shed tears, as being overjoyed
+                    Bid him shed 
+                    
+                    <span class="rebus tear"></span>
+                    <span class="rebus_referent">tear</span>s,
+                  
+                    as being overjoyed
                     To see her noble lord restored to health,
                     Who, for this seven years, hath esteemed him
                     No better than a poor and loathsome beggar.
                     And if the boy have not a woman’s gift
-                    To rain a shower of commanded tears,
-                    An onion will do well for such a shift,
-                    Which (in a napkin being close conveyed)
-                    Shall in despite enforce a watery eye.
+                    To rain a shower of commanded 
+                    
+                    <span class="rebus tear"></span>
+                    <span class="rebus_referent">tear</span>s,
+                  
+                    An  
+                    
+                    <span class="rebus onion"></span>
+                    <span class="rebus_referent">onion</span>
+                  
+                    will do well for such a shift,
+                    Which (in a  
+                    
+                    <span class="rebus napkin"></span>
+                    <span class="rebus_referent">napkin</span>
+                  
+                    being close conveyed)
+                    Shall in despite enforce a watery 
+                    
+                    <span class="rebus eye"></span>
+                    <span class="rebus_referent">eye</span>.
+                    
                     See this dispatched with all the haste thou canst.
                     Anon I’ll give thee more instructions.
                     A Servingman exits.
@@ -445,16 +856,433 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
                     laughter
                     When they do homage to this simple peasant,
                     I’ll in to counsel them. Haply my presence
-                    May well abate the over-merry spleen
+                    May well abate the over-merry 
+                    
+                    <span class="rebus spleen"></span>
+                    <span class="rebus_referent">spleen</span>
+                  
                     Which otherwise would grow into extremes.
                     They exit.
             </p>
+                
+                <div id="induction_scene2_theshrew">
+                    <h5>INDUCTION</h5>
+                    <h6>Scene II</h6>
+                </div>
+                <br>
+                <p>
+                    Enter aloft Christopher Sly, the drunkard, with Attendants, some with apparel, basin and 
+                    
+                    <span class="rebus ewer"></span>
+                    <span class="rebus_referent">ewer</span>,
+                    
+                    and
+                    other appurtenances, and Lord dressed as an Attendant.
+
+                    SLY  For God’s sake, a 
+                    
+                    <span class="rebus pot"></span>
+                    <span class="rebus_referent">pot</span>
+                    
+                    of small 
+                    
+                    <span class="rebus ale"></span>
+                    <span class="rebus_referent">ale</span>.
+                    
+                    FIRST SERVINGMAN
+                    Will ’t please your Lord drink a 
+                    
+                    <span class="rebus cup"></span>
+                    <span class="rebus_referent">cup</span>
+                    
+                    of sack?
+                    SECOND SERVINGMAN
+                    Will ’t please your Honor taste of these 
+                    
+                    <span class="rebus conserves"></span>
+                    <span class="rebus_referent">conserves</span>?
+                    
+                    THIRD SERVINGMAN
+                    What raiment will your Honor wear today?
+                    SLY  I am Christophero Sly! Call not me “Honor” nor
+                    “Lordship.” I ne’er drank sack in my life. An if you
+                    give me any 
+                    
+                    <span class="rebus conserves"></span>
+                    <span class="rebus_referent">conserves</span>,
+                    
+                    give me 
+                    
+                    <span class="rebus conserves"></span>
+                    <span class="rebus_referent">conserves</span>
+                    
+                    of beef.
+                    Ne’er ask me what raiment I’ll wear, for I have no
+                    more 
+                    
+                    <span class="rebus doublet"></span>
+                    <span class="rebus_referent">doublet</span>s
+                    
+                    than  
+                    
+                    <span class="rebus back"></span>
+                    <span class="rebus_referent">back</span>s,
+                    
+                    no more 
+                    
+                    <span class="rebus stockings"></span>
+                    <span class="rebus_referent">stockings</span>
+                    
+                    than
+                    
+                    <span class="rebus leg"></span>
+                    <span class="rebus_referent">leg</span>s,
+                    
+                    nor no more 
+                    
+                    <span class="rebus shoe"></span>
+                    <span class="rebus_referent">shoe</span>s
+                    
+                    than feet, nay sometime
+                    more feet than 
+                    
+                    <span class="rebus shoe"></span>
+                    <span class="rebus_referent">shoe</span>s,
+                    
+                    or such 
+                    
+                    <span class="rebus shoe"></span>
+                    <span class="rebus_referent">shoe</span>s
+                    
+                    as my 
+                    
+                    <span class="rebus toe"></span>
+                    <span class="rebus_referent">toe</span>s
+                  
+                    look
+                    through the  
+                    
+                    <span class="rebus over-leather"></span>
+                    <span class="rebus_referent">over-leather</span>.
+                  
+                    LORD, as Attendant
+                    Heaven cease this idle humor in your Honor!
+                    O, that a mighty man of such descent,
+                    Of such possessions, and so high esteem
+                    Should be infusèd with so foul a spirit!
+                    SLY  What, would you make me mad? Am not I Christopher
+                    Sly, old Sly’s son of Burton Heath, by birth a
+                    peddler, by education a cardmaker, by transmutation
+                    a bearherd, and now by present profession a
+                    tinker? Ask Marian Hacket, the fat alewife of Wincot,
+                    if she know me not! If she say I am not fourteen
+                    
+                    
+                    <span class="rebus pence"></span>
+                    <span class="rebus_referent">pence</span>
+                    
+                    on the score for sheer 
+                    
+                    <span class="rebus ale"></span>
+                    <span class="rebus_referent">ale</span>, 
+                    
+                    score me up for the
+                    lying’st knave in Christendom. What, I am not
+                    bestraught! Here’s—
+                    THIRD SERVINGMAN
+                    O, this it is that makes your lady mourn.
+                    SECOND SERVINGMAN
+                    O, this is it that makes your servants droop.
+                    LORD, as Attendant
+                    Hence comes it that your kindred shuns your 
+                    
+                    <span class="rebus house"></span>
+                    <span class="rebus_referent">house</span>,
+                  
+                    As beaten hence by your strange lunacy.
+                    O noble lord, bethink thee of thy birth,
+                    Call home thy ancient thoughts from banishment,
+                    And banish hence these abject lowly dreams.
+                    Look how thy servants do attend on thee,
+                    Each in his office ready at thy beck.
+                    Wilt thou have 
+                    
+                    <span class="rebus music_played"></span>
+                    <span class="rebus_referent">music</span>?
+                    
+                    Hark, Apollo plays,	
+                    
+                    <span class="rebus music_played"></span>
+                    <span class="rebus_referent">Music</span>.
+                    
+                    And twenty cagèd  
+                    
+                    <span class="rebus nightingale"></span>
+                    <span class="rebus_referent">nightingale</span>s
+                  
+                    do sing.
+                    Or wilt thou sleep? We’ll have thee to a 
+                    
+                    <span class="rebus couch"></span>
+                    <span class="rebus_referent">couch</span>
+                    
+                
+                    Softer and sweeter than the lustful bed
+                    On purpose trimmed up for Semiramis.
+                    Say thou wilt walk, we will bestrew the ground.
+                    Or wilt thou ride? Thy 
+                    
+                    <span class="rebus horse"></span>
+                    <span class="rebus_referent">horse</span>s
+                    
+                    shall be trapped,
+                    Their 
+                    
+                    <span class="rebus harness"></span>
+                    <span class="rebus_referent">harness</span>
+                    
+                    studded all with 
+                    
+                    <span class="rebus gold_chain"></span>
+                    <span class="rebus_referent">gold</span>
+                    
+                    and 
+                    
+                    <span class="rebus pearl"></span>
+                    <span class="rebus_referent">pearl</span>.
+                   
+                    Dost thou love hawking? Thou hast hawks will soar
+                    Above the morning lark. Or wilt thou hunt?
+                    Thy 
+                    
+                    <span class="rebus hound"></span>
+                    <span class="rebus_referent">hound</span>s
+                    
+                    shall make the welkin answer them
+                    And fetch shrill echoes from the hollow earth.
+                    FIRST SERVINGMAN
+                    Say thou wilt course. Thy greyhounds are as swift
+                    As breathèd stags, ay, fleeter than the roe.
+                    SECOND SERVINGMAN
+                    Dost thou love pictures? We will fetch thee straight
+                    Adonis painted by a running brook,
+                    And Cytherea all in sedges hid,
+                    Which seem to move and wanton with her breath,
+                    Even as the waving sedges play with wind.
+                    LORD, as Attendant
+                    We’ll show thee Io as she was a maid
+                    And how she was beguilèd and surprised,
+                    As lively painted as the deed was done.
+                    THIRD SERVINGMAN
+                    Or Daphne roaming through a thorny 
+                    
+                    <span class="rebus wood"></span>
+                    <span class="rebus_referent">wood</span>,
+                    
+                    Scratching her 
+                    
+                    <span class="rebus leg"></span>
+                    <span class="rebus_referent">leg</span>s
+                    
+                    that one shall swear she bleeds,
+                    And at that sight shall sad Apollo weep,
+                    So workmanly the 
+                    
+                    <span class="rebus blood"></span>
+                    <span class="rebus_referent">blood</span>
+                    
+                    and 
+                    
+                    <span class="rebus tear"></span>
+                    <span class="rebus_referent">tear</span>s
+                  
+                    are drawn.
+                    LORD, as Attendant
+                    Thou art a lord, and nothing but a lord;
+                    Thou hast a lady far more beautiful
+                    Than any woman in this waning age.
+                    FIRST SERVINGMAN
+                    And till the 
+                    
+                    <span class="rebus tear"></span>
+                    <span class="rebus_referent">tear</span>s
+                  
+                    that she hath shed for thee
+                    Like envious floods o’errun her lovely 
+                    
+                    <span class="rebus face_man"></span>
+                    <span class="rebus_referent">face</span>,
+                    
+                    She was the fairest creature in the world—
+                    And yet she is inferior to none.
+                    SLY
+                    Am I a lord, and have I such a lady?
+                    Or do I dream? Or have I dreamed till now?
+                    I do not sleep: I see, I hear, I speak,
+                    I smell sweet savors, and I feel soft things.
+                    Upon my life, I am a lord indeed
+                    And not a tinker, nor Christopher Sly.
+                    Well, bring our lady hither to our sight,
+                    And once again a 
+                    
+                    <span class="rebus pot"></span>
+                    <span class="rebus_referent">pot</span>
+                    
+                    o’ the smallest 
+                    
+                    <span class="rebus ale"></span>
+                    <span class="rebus_referent">ale</span>.
+                    
+                    SECOND SERVINGMAN
+                    Will ’t please your Mightiness to wash your 
+                    
+                    <span class="rebus hand"></span>
+                    <span class="rebus_referent">hand</span>s?
+                    
+                    O, how we joy to see your wit restored!
+                    O, that once more you knew but what you are!
+                    These fifteen years you have been in a dream,
+                    Or, when you waked, so waked as if you slept.
+                    SLY
+                    These fifteen years! By my fay, a goodly nap.
+                    But did I never speak of all that time?
+                    FIRST SERVINGMAN
+                    Oh, yes, my lord, but very idle words.
+                    For though you lay here in this goodly 
+                    
+                    <span class="rebus chamber"></span>
+                    <span class="rebus_referent">chamber</span>,
+                    
+                    Yet would you say you were beaten out of 
+                    
+                    <span class="rebus door"></span>
+                    <span class="rebus_referent">door</span>,
+                    
+                    And rail upon the hostess of the  
+                    
+                    <span class="rebus house"></span>
+                    <span class="rebus_referent">house</span>,
+                  
+                    And say you would present her at the leet
+                    Because she brought stone jugs and no sealed
+                    
+                    
+                    <span class="rebus quart"></span>
+                    <span class="rebus_referent">quart</span>s.
+                    
+                    Sometimes you would call out for Cicely Hacket.
+                    SLY  Ay, the woman’s maid of the  
+                    
+                    <span class="rebus house"></span>
+                    <span class="rebus_referent">house</span>.
+                   
+                    THIRD SERVINGMAN
+                    Why, sir, you know no  
+                    
+                    <span class="rebus house"></span>
+                    <span class="rebus_referent">house</span>,
+                  
+                    nor no such maid,
+                    Nor no such men as you have reckoned up,
+                    As Stephen Sly and old John Naps of Greete,
+                    And Peter Turph and Henry Pimpernell,
+                    And twenty more such names and men as these,
+                    Which never were, nor no man ever saw.
+                    SLY  Now, Lord be thanked for my good amends!
+                    ALL  Amen.
+                    SLY  I thank thee. Thou shalt not lose by it.
+
+                    Enter Page as Lady, with Attendants.
+
+                    PAGE, as Lady  How fares my noble lord?
+                    SLY  Marry, I fare well, for here is cheer enough.
+                    Where is my wife?
+                    PAGE, as Lady
+                    Here, noble lord. What is thy will with her?
+                    SLY
+                    Are you my wife, and will not call me “husband”?
+                    My men should call me “lord.” I am your goodman.
+                    PAGE, as Lady
+                    My husband and my lord, my lord and husband,
+                    I am your wife in all obedience.
+                    SLY
+                    I know it well.—What must I call her?
+                    LORD, as Attendant  “Madam.”
+                    SLY  “Alice Madam,” or “Joan Madam”?
+                    LORD
+                    “Madam,” and nothing else. So lords call ladies.
+                    SLY
+                    Madam wife, they say that I have dreamed
+                    And slept above some fifteen year or more.
+                    PAGE, as Lady
+                    Ay, and the time seems thirty unto me,
+                    Being all this time abandoned from your bed.
+                    SLY
+                    ’Tis much.—Servants, leave me and her alone.—
+                    Madam, undress you, and come now to bed.
+                    PAGE, as Lady
+                    Thrice noble lord, let me entreat of you
+                    To pardon me yet for a night or two;
+                    Or if not so, until the sun be set.
+                    For your physicians have expressly charged,
+                    In peril to incur your former malady,
+                    That I should yet absent me from your bed.
+                    I hope this reason stands for my excuse.
+                    SLY  Ay, it stands so that I may hardly tarry so long; but
+                    I would be loath to fall into my dreams again. I will
+                    therefore tarry in despite of the  
+                    
+                    <span class="rebus flesh"></span>
+                    <span class="rebus_referent">flesh</span>
+                    
+                    and the
+                    
+                    <span class="rebus blood"></span>
+                    <span class="rebus_referent">blood</span>.
+
+                    Enter a Messenger.
+
+                    MESSENGER
+                    Your Honor’s players, hearing your amendment,
+                    Are come to play a pleasant 
+                    
+                    <span class="rebus comedy"></span>
+                    <span class="rebus_referent">comedy</span>,
+                    
+                    For so your doctors hold it very meet,
+                    Seeing too much sadness hath congealed your
+                    
+                    
+                    <span class="rebus blood"></span>
+                    <span class="rebus_referent">blood</span>,
+                    
+                    And melancholy is the nurse of frenzy.
+                    Therefore they thought it good you hear a play
+                    And frame your mind to mirth and merriment,
+                    Which bars a thousand harms and lengthens life.
+                    SLY  Marry, I will. Let them play it.	Messenger exits.
+                    Is not a comonty a Christmas gambold or a tumbling
+                    trick?
+                    PAGE, as Lady
+                    No, my good lord, it is more pleasing stuff.
+                    SLY  What, 
+                    
+                    <span class="rebus household_stuff"></span>
+                    <span class="rebus_referent">household stuff</span>?
+                    
+                    PAGE, as Lady  It is a kind of history.
+                    SLY  Well, we’ll see ’t. Come, madam wife, sit by my
+                    side, and let the world slip. We shall ne’er be
+                    younger.
+                    They sit.
+
+                </p>
 
                 <div class="text_opening" id="act5_scene2_theshrew">
                     <h5 style="color:rgb(207,157,65);">ACT V</h5>
                     <h5>Scene II</h5>
                 </div>
-                <p id="rebus">
+                <p>
                     Fie, fie! Unknit that threat’ning unkind brow, <br>
                     And dart not scornful glances from those eyes<br>
                     To wound thy lord, thy king, thy governor.<br>
@@ -506,10 +1334,66 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
                     <a href="pinchbelly.html">Deliver your judgement here!</a>
                 </div>
 
-            </section>
+            </div>
 
         </div>
+        
+        <div class="props" style="left:3%;">
+            <a href="https://www.metmuseum.org/art/collection/search/191964" class="basinprop">
+                <img src="../img/img_props/basin.png" title="Barber's basin, 1796">
+            </a>
+            <a href="https://www.metmuseum.org/art/collection/search/199021">
+                <img src="../img/img_props/pot.png" title="Posset pot, 1710">
+            </a>
+            <a href="https://www.metmuseum.org/art/collection/search/199507">
+                <img src="../img/img_props/wine.png" title="Wine bottle, 1651">
+            </a>
+            <a href="https://www.metmuseum.org/art/collection/search/195721">
+                <img src="../img/img_props/cup.png" title="Standing cup, 1639–40">
+            </a>
+            <a href="https://www.metmuseum.org/art/collection/search/191964">
+                <img src="../img/img_props/basin.png" title="Barber's basin, 1796">
+            </a>
+            <a href="https://www.metmuseum.org/art/collection/search/199021">
+                <img src="../img/img_props/pot.png" title="Posset pot, 1710">
+            </a>
+            <a href="https://www.metmuseum.org/art/collection/search/199507">
+                <img src="../img/img_props/wine.png" title="Wine bottle, 1651">
+            </a>
+            <a href="https://www.metmuseum.org/art/collection/search/195721">
+                <img src="../img/img_props/cup.png" title="Standing cup, 1639–40">
+            </a>
+        </div>
+        
+        <div class="props" style="right:3%; text-align:right;">
+            <a href="https://www.metmuseum.org/art/collection/search/191964">
+                <img src="../img/img_props/basin.png" title="Barber's basin, 1796">
+            </a>
+            <a href="https://www.metmuseum.org/art/collection/search/199021">
+                <img src="../img/img_props/pot.png" title="Posset pot, 1710">
+            </a>
+            <a href="https://www.metmuseum.org/art/collection/search/199507">
+                <img src="../img/img_props/wine.png" title="Wine bottle, 1651">
+            </a>
+            <a href="https://www.metmuseum.org/art/collection/search/195721">
+                <img src="../img/img_props/cup.png" title="Standing cup, 1639–40">
+            </a>
+            <a href="https://www.metmuseum.org/art/collection/search/191964">
+                <img src="../img/img_props/basin.png" title="Barber's basin, 1796">
+            </a>
+            <a href="https://www.metmuseum.org/art/collection/search/199021">
+                <img src="../img/img_props/pot.png" title="Posset pot, 1710">
+            </a>
+            <a href="https://www.metmuseum.org/art/collection/search/199507">
+                <img src="../img/img_props/wine.png" title="Wine bottle, 1651">
+            </a>
+            <a href="https://www.metmuseum.org/art/collection/search/195721">
+                <img src="../img/img_props/cup.png" title="Standing cup, 1639–40">
+            </a>
+        </div>
+        
     </div>
+    
     
     <br>
     
@@ -517,7 +1401,7 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
         <div class="footer_head">
             <a href="../index.html">
                 <div class="footer_shrew">
-                    <img src="../img_homepage/shrew.png" alt="a shrew"> 
+                    <img src="../img/img_homepage/shrew.png" alt="a shrew"> 
                 </div>
                 <div class="footer_headtext">
                     <strong>Beshrew Me</strong>
@@ -552,8 +1436,10 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
 
     </footer>
     
+    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     
-    <script src="texts_javascript.js"> </script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/texts.js"></script>
 
 </body>
     
