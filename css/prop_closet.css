@@ -16,15 +16,16 @@ Q: Overflow hidden isn't working
 }
 
 .container {
-  margin: 5% auto 30% auto;
+  margin: 2% auto 15% auto;
   width: 250px;
-  height: 200px;
+  height: 400px;
   position: relative;
   perspective: 1000px;
 }
 
 
 .carousel {
+    margin: 35% auto 5%;
   height: 100%;
   width: 100%;
     position:absolute;
@@ -46,33 +47,37 @@ Q: Overflow hidden isn't working
 }
 
 .a {
-  transform: rotateY(0deg) translateZ(250px);
+  transform: rotateY(0deg) translateZ(350px);
 }
 .b {
-  transform: rotateY(60deg) translateZ(250px);
+  transform: rotateY(45deg) translateZ(350px);
 }
 .c {
-  transform: rotateY(120deg) translateZ(250px);
+  transform: rotateY(90deg) translateZ(350px);
 }
 .d {
-  transform: rotateY(180deg) translateZ(250px);
+  transform: rotateY(135deg) translateZ(350px);
 }
 .e {
-  transform: rotateY(240deg) translateZ(250px);
+  transform: rotateY(180deg) translateZ(350px);
 } 
 .f {
-  transform: rotateY(300deg) translateZ(250px);
+  transform: rotateY(225deg) translateZ(350px);
 }
 
 .g {
-  transform: rotateY(360deg) translateZ(250px);
+  transform: rotateY(270deg) translateZ(350px);
+}
+
+.h {
+  transform: rotateY(315deg) translateZ(350px);
 }
 
 
 .next, .prev {
   color: #444;
   position: absolute;
-  bottom: -150%;
+  bottom: -50%;
   padding: 1em 2em;
   cursor: pointer;
   background: #CCC;
