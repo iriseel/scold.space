@@ -74,6 +74,18 @@ Q: What would be the better way of organizing the texts? Having each scene be it
     filter:brightness(120%);
 }
 
+
+#sly_memorytheatre {
+    position:absolute;
+    z-index:2;
+    width:25%;
+    margin:auto;
+    top:12.5%;
+    left:0;
+    right:0;
+    
+}
+
 /*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
 Q: Do something about min-width?
 */

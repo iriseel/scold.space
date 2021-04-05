@@ -1,0 +1,64 @@
+nav {
+    position:fixed;
+    z-index:2;
+    background-color:black;
+    margin:auto;
+    left:0;
+    right:0;
+    top:0;
+}
+
+.basic_text {
+    margin: 12% auto;
+}
+
+.basic_text h3 {
+    font-size:2.5em;
+}
+
+.subheadings {
+    position:relative;
+    width:100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 3.5em;
+}
+
+.subheadings p, .subheadings ul {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0;
+     background:url(../img/img_about/trencher_textbox_bg.png);
+    background-repeat:round;
+}
+
+.subheadings h3 {
+    margin-bottom: .5em;
+}
+
+li {
+    padding:.5em 0em;
+}
+
+.trencher_border {
+    border-image: url(../img/img_about/trencher_textbox_frame.png) 23 round;
+    border-width: 4em;
+    border-image-outset: .3;
+    border-style: solid;
+}
+
+.falconer {
+    position:absolute;
+    z-index:1;
+    width:20%;
+    top:-11.5%;
+    left:6%;
+}
+
+.go_to_war {
+    position:absolute;
+    z-index:1;
+    width:25%;
+    bottom:-22%;
+    right:2%;
+}

@@ -1,0 +1,59 @@
+#homepage {
+    position:relative;
+    overflow:hidden;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 2%;
+}
+
+
+#randimg {
+    position: absolute;
+    z-index:1;
+    left:28%;
+    top:30%;
+    height: 40%;
+    width: 42%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.subpages {
+    width:33%;
+    padding:10px;
+    margin:10px 0px;
+    display:inline-block;
+    background-image:url(../img/img_homepage/trencher_textbox.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+
+/*(ʘ言ʘ╬)
+Q: What is causing h3 to resize so strangely here? In the general style.css all I said was have it be 1.5rem, with rem being: 
+    font-size: calc(14px + 0.3vmax);
+A: Just change h3 to resize corresponding to the viewport and it'll keep its proportions that way. But remember to specify it to .subpages or else it'll affect all your h3!
+*/
+.subpages h3 {
+    font-size: 150%;
+     color:#372500;
+}
+
+.subheadings {
+    position:relative;
+    width:100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 8%;
+}
+
+.subheadings p {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
