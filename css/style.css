@@ -186,17 +186,26 @@ a {
     color:#c73e14;
 }
 
+
+/* this was to make the links enlarge on hover, but that messed with the textboxes
 a:hover {
     font-size:1.1em;
     transition:.5s;
-    
 }
+*/
 
 
 a.notready:hover {
     cursor:not-allowed;
 }
 
+
+.trencher_border {
+    border-image: url(../img/img_about/trencher_textbox_frame.png) 23 round;
+    border-width: 4em;
+    border-image-outset: .3;
+    border-style: solid;
+}
 
 footer {
     display: flex;
@@ -205,7 +214,7 @@ footer {
     justify-content: space-around;
     background: black;
     padding: 20px 20px;
-    margin: 0px;
+    margin: 5% 0 0 0;
     
 }
 

@@ -1,0 +1,109 @@
+/*(ʘ言ʘ╬)
+Q: I kid you not, getting this background image to blur without blurring all the items on top of it has been the bane of this webpage. For a moment there I ended up resorting to making the background and the table of contents separate divs with absolute and relative positioning, and it just got to be too much, so I gave up on a blurred background that way. But is there a way to blur the background without affecting the rest of what's in #tableofcontents?
+(trying to put 
+        -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);  
+into #tableofcontents didn't work for me btw.)
+A: Maybe just blur the background in photoshop lol ... css blur is also pretty browser-intensive so just conserve energy where you can!
+*/
+
+#tableofcontents {
+    background-image:url(https://i.pinimg.com/originals/c0/ae/66/c0ae667b522cbee616623a4575d1b7d4.jpg); 
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    position:relative;
+}
+
+/*
+The .container is so that if you shrink the window too small, the trenchers won't reorganize/move to the next line and go haywire that way
+*/
+
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+Q: Actually, is there a way to get rid of this container but make sure that all the objects resize in exact proportion to each other so that the trenchers never squeeze each other off the their rows and therefore disorganize the whole thing?
+A: Why don't you make a new html and css set and try making a position:relative container in which the trenchers and cutlery are position:absolute, and where all their units (height, width, padding, margin) are % rather than pixels or anything less responsive.
+A2: when looking at table of contents page, the reason this is not working is that you are:
+- forgetting that row/module structure. you are putting all these trencher and cutlery divs into container and not really dividing them on rows the way you are supposed to.
+- you are using inline-block… when you should be using float or flex
+- you are using imgs forks without putting them into divs. once again also using display:inline-block;
+- you are using br to make break all these images into spaces, when you should be using row divs to stack them one on top of the other (back to our grid). so the first 2 plates should be one row, then the other plates/trenchers and cutlery is another row and then the last two plates is the third row. and then if you need to add spaces between the rows you use margins and padding.
+*/
+.container {
+    min-width: 1265px;
+    margin:auto;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.trencher {
+    margin: 20px 50px;
+    width:18%;
+    height:auto;
+    display:inline-block;
+    filter: drop-shadow(6px 9px 4px #784200);
+}
+
+.trencher .back {
+    position:relative;
+    display:inline-block;
+}
+
+.trencher .front {
+    position:relative;
+    display: none;
+    z-index: 2;
+
+}
+
+.trencher:hover .front{
+    display: inline;
+}
+
+.trencher:hover .back {
+    display:none;
+}
+
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+Q: Why couldn't I place the blur filter inside .cutlery? Instead it only worked once I placed it individually in .fork, .knife, and .spoon
+A:
+*/
+.cutlery {
+    
+    padding: 0px 10px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    filter: drop-shadow(6px 9px 4px #784200);
+    top:3vh;
+    
+}
+
+
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+Q: Why are the sizes of the fork, knife, and spoon so wonk? Whose parent percentage are they basing themselves off of?
+A:
+*/
+.fork {
+    width:4.5%;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.knife {
+    width:4%;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.spoon {
+    width:6.7%;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}

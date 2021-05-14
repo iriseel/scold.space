@@ -40,13 +40,6 @@ li {
     padding:.5em 0em;
 }
 
-.trencher_border {
-    border-image: url(../img/img_about/trencher_textbox_frame.png) 23 round;
-    border-width: 4em;
-    border-image-outset: .3;
-    border-style: solid;
-}
-
 .falconer {
     position:absolute;
     z-index:1;
