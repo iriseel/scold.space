@@ -1,23 +1,34 @@
-#info {
+#info_btn {
     position:absolute;
+    max-width:80%;
+    max-height:80%;
     z-index:1;
-    width:30%;
-    left:3%;
-    top:7%;
-    max-width:600px;
-    min-width:400px;
     padding:0;
-    display:none;
     background-color:blanchedalmond;
 }
 
-#info_btn {
+#info_btn h6 {
+    padding: 0;
+    margin: 0;
+}
+
+#info_btn:hover {
+    cursor:pointer;
+}
+
+#info {
     position:absolute;
-    z-index:1;
+    z-index:3;
+    width:30%;
+    margin:auto;
+    max-width:600px;
+    min-width:400px;
     padding:0;
-    left:3%;
-    top:7%;
     background-color:blanchedalmond;
+    
+    visibility:hidden;
+    opacity:0;
+    transition:.6s;
 }
 
 #info.trencher_border, #info_btn.trencher_border {
@@ -28,8 +39,11 @@
 
 .close {
   color: #aaa;
-  float: right;
-  font-size: 28px;
+  position:absolute;
+    z-index:4;
+    right:-1%;
+    top:-4%;
+  font-size: 32px;
   font-weight: bold;
 }
 
@@ -40,26 +54,142 @@
   cursor: pointer;
 }
 
-/*wheels of fortune*/
-.wofs {
-    display:flex;
-    margin: 2% auto;
-    height:auto;
-}
-
 .wof {
-  position:relative;
-    width:45%;
-  max-width:calc(2798/3357*80vh);
-  height:auto;
-  margin: 0 auto;
-  top:20px;
+    position:relative;
+    width:98vw;
+    height:90vh;
+    margin:auto;
+    
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+[id^="fortunes"] {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+
+.fortune_card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.fortune_card div {
+    opacity:0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    pointer-events:none;
+    
+    border-radius:3%;
+}
+
+.fortune_card div p {
+    max-width:100%;
+    text-align:center;
+    padding:3%;
+    margin:0;
+}
+
+.fortune_card .front {
+  background: rgb(175,119,70);
+}
+
+.fortune_card .back {
+    background: rgb(123,71,26);
+    -webkit-transform: rotateX( 180deg );
+    -moz-transform: rotateX( 180deg );
+    -o-transform: rotateX( 180deg );
+    transform: rotateX( 180deg );
+}
+
+.fortune_card.flipped {
+    -webkit-transform: rotateX( 180deg );
+    -moz-transform: rotateX( 180deg );
+    -o-transform: rotateX( 180deg );
+    transform: rotateX( 180deg );
+}
+
+/*CHARACTER NEEDLES*/
+.dropzone {
+    position:relative;
+    width: min(15vmin,30%);
+    height: 100%;
+    
+    display:flex;
+    flex-flow: column wrap;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#dropzone_kate, #dropzone_sly, #dropzone_petruchio, #dropzone_volvelle {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items:center;
+}
+
+#dropzone_kate, #dropzone_sly, #dropzone_petruchio {
+    position:relative;
+    width:100%;
+    height:25%;
+    border: 1px dotted #c73e14;
+    border-radius:3%;
+}
+
+.character_name {
+    width:123%;
+    height:8%;
+    padding-bottom:5%;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content:flex-end;
+    align-items:center;
+}
+.character_name h6 {
+    color:rgb(199, 129, 0);
+}
+.character_name p {
+    font-size:.9em;
+    line-height:1.2em;
+    text-align:center;
 }
 
 
-#arrow {
-  position:absolute;
+.kate, .sly, .petruchio {
+    z-index:2;
+    width:70%;
+    height:auto;
+    cursor:pointer;
+}
 
+.arrow {
   -webkit-transition-property: transform;
   -webkit-transition-timing-function: cubic-bezier(0,0,.25,1);
   -moz-transition-property: transform;
@@ -68,33 +198,67 @@
   transition-timing-function: cubic-bezier(0,0,.25,1);
    }
 
-
-.kate {
-  left:41%;
-  top:45%;
-    width:17%;
-    height:20%; background:url(../img/img_characters/katherine.png);
-    background-repeat:no-repeat;
-    background-size:contain;
+/*CHARACTER VOLVELLE*/
+.volvelle {
+    margin-left:5%;
+    position:relative;
+    width: min(85vmin,75%);
+    height: min(85vmin,100%);
     
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items:center;
 }
 
-.petruchio {
-  left:43%;
-  top:43%;
-    width:14%;
-    height:22%; background:url(../img/img_characters/petruchio.png);
-    background-repeat:no-repeat;
-    background-size:contain;
+.volvelle div {
+    position:absolute;
+}
+
+/*without this, the circles spin off-center*/
+.volvelle div img {
+    display:block;
+    padding:0;
+    margin:0;
+}
+
+/*For whatever reason, drag and drop js doesn't work if the drop zone is an image itself, so I had to change it to a background-image*/
+.character_bg {
+    background-image: url(../img/img_characters/volvelles/volvelle_character_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
     
+    width:calc(693/3422*100%);
+    height:calc(693/3422*100%);
+    z-index:1;
 }
 
-.kate, .petruchio:hover {
-    cursor:pointer;
+.kate_prop {
+    width:calc(1220/3422*100%);
+}
+
+.kate_parlance {
+    width:calc(1502/3422*100%);
+}
+
+.sly_prop {
+    width:calc(2002/3422*100%);
+}
+.sly_parlance {
+    width:calc(2309/3422*100%);
+}
+
+/*Transform-origin needs work!!*/
+.petruchio_prop {
+    width:calc(3087/3422*100%);
+}
+.petruchio_parlance {
+    width:100%;
 }
 
 
-/* The flip card container (remove perspective if you don't want the 3D effect) */
+/* The flip card container */
 .flip-card {
   background-color: transparent;
   width: 505px;

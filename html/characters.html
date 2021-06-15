@@ -95,28 +95,120 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
         </div>
     </nav>
     
-    <section class="wofs">
-        
-        <button id="info_btn" class="trencher_border">Info</button>
-        
-        <div id="info" class="trencher_border">
-            <span class="close">&times;</span>
-            These character illustrations are based on the medieval-renaissance tradition of fortune-telling volvelles. Encircled by quasi-magical phrases or diagrammatic images, such devices, along with dice and cards, determined navigational routes on the high seas and astrological predictions for mundane affairs alike.
-        </div>
-        
-        <div class="wof">
-            <h4>Kate</h4>
-            <div id="arrow" class="kate"></div>
-            <img src="../img/img_characters/Volvelle_Kate.png">
+
+    <section class="wof">
+
+        <div class="dropzone">
+            <div class="character_name">
+                <h6>Petruchio</h6>
+                <p>Will you "tame a shrew and charm her chattering tongue[?]"</p>
+            </div>
+            <div id="dropzone_petruchio" ondrop="drop(event)" ondragover="allowDrop(event)">
+                
+                <div id="fortunes_petruchio">
+                    <div class="fortune_card">
+                        <div class="front">
+                            <p></p>
+                        </div>
+                        <div class="back">
+                            <p class="active"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <img src="../img/img_characters/petruchio.png" class="petruchio" id="drag_petruchio" draggable="true" ondragstart="drag(event)">
+            </div>
+
+            <div class="character_name">
+                <h6>Sly</h6>
+                <p>“Am I a lord, and have I such a lady?”</p>
+            </div>
+            <div id="dropzone_sly" ondrop="drop(event)" ondragover="allowDrop(event)">
+                
+                <div id="fortunes_sly">
+                    <div class="fortune_card">
+                        <div class="front">
+                            <p></p>
+                        </div>
+                        <div class="back">
+                            <p class="active"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <img src="../img/img_characters/sly.png" class="sly" id="drag_sly" draggable="true" ondragstart="drag(event)">
+            </div>
+
+            <div class="character_name">
+                <h6>Kate</h6>
+                <p>Will he "make a puppet of [you?]"</p>
+            </div>
+            <div id="dropzone_kate" ondrop="drop(event)" ondragover="allowDrop(event)">
+            
+                <div id="fortunes_kate">
+                    <div class="fortune_card">
+                        <div class="front">
+                            <p></p>
+                        </div>
+                        <div class="back">
+                            <p class="active"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <img src="../img/img_characters/katherine.png" class="kate" id="drag_kate" draggable="true" ondragstart="drag(event)">
+            </div>
         </div>
 
-        <div class="wof">
-            <h4>Petruchio</h4>
-            <div id="arrow" class="petruchio"></div>
-            <img src="../img/img_characters/Volvelle_Petruchio.png">
+        <div class="volvelle">
+            
+            <div class="character_bg" id="dropzone_volvelle" ondrop="drop(event);arrow(event)" ondragover="allowDrop(event)">
+                <button id="info_btn" class="trencher_border"><h6>How to Play</h6></button>
+
+                <div id="info" class="trencher_border">
+                    <span class="close">&times;</span>
+                    <h6>
+                        <em>The</em> PREFACE, <em>teaching the Use and Understanding of this</em> Book of Fortune.
+                    </h6>
+                    <ol>
+                        <li>Drag a character to the center of the volvelle</li>
+                        <li>Once positioned, click the character to spin the volvelle</li>
+                        <li>Receive thy Fortune, or the Answer to thy Question</li>
+                    </ol>
+                    <p style="color:black">
+                        These character illustrations are based on the medieval-renaissance tradition of fortune-telling volvelles. Encircled by quasi-magical phrases or diagrammatic images, such devices, along with dice and cards, determined navigational routes on the high seas and astrological predictions for mundane affairs alike.
+                    </p>
+                </div>
+            </div>
+
+            <div class="kate_prop">
+                <img src="../img/img_characters/volvelles/kate_prop_volvelle.png">
+            </div>
+
+            <div class="kate_parlance">
+                <img src="../img/img_characters/volvelles/kate_parlance_volvelle.png">
+            </div>
+
+            <div class="sly_prop">
+                <img src="../img/img_characters/volvelles/sly_prop_volvelle.png">
+            </div>
+
+            <div class="sly_parlance">
+                <img src="../img/img_characters/volvelles/sly_parlance_volvelle.png">
+            </div>
+
+            <div class="petruchio_prop">
+                <img src="../img/img_characters/volvelles/petruchio_prop_volvelle.png">
+            </div>
+
+            <div class="petruchio_parlance">
+                <img src="../img/img_characters/volvelles/petruchio_parlance_volvelle.png">
+            </div>
         </div>
+
     </section>
-    
+         
+
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
@@ -169,7 +261,6 @@ NEWB CODE AHEAD!!!! LOOK AT YOUR OWN PERIL!!!!
 
     </footer>
 
-    
     <script src="../js/jquery.js"></script>
     <script src="../js/characters.js"></script>
 </body>
