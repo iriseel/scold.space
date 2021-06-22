@@ -145,6 +145,9 @@ var volvelle_spin_character = 0;
 
 $("#dropzone_volvelle").on("click", ".arrow", function(){
     
+    var wof_audio = new Audio('../audio/wof_sfx.m4a');
+    wof_audio.play();
+    
     //set the increments/degrees by which the circles spin (since each circle has 8 sections, that's 360/8=45)
     var volvelle_fractions = ["45", "90", "135", "180", "225", "270", "315", "360"];
 
