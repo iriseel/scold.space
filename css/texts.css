@@ -29,6 +29,7 @@ Q: What would be the better way of organizing the texts? Having each scene be it
     justify-content: center;
     align-items:center;
     margin: auto;
+    position:relative;
 }
 
 #mode_controls * {
@@ -39,6 +40,18 @@ Q: What would be the better way of organizing the texts? Having each scene be it
     height:100%;
     margin: 0% 2%;
 }
+
+#hint {
+    top:3em; 
+}
+
+#hint, #hint p {
+   position:absolute; 
+    width:100%;
+    text-align:center;
+    font-size:.8em;
+}
+
 
 #rebus_controls {
     background-image: url(../img/img_texts/rebus_controls.png);
