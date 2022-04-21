@@ -146,6 +146,7 @@
     flex-flow: column wrap;
     justify-content:space-between;
     align-items:center;
+    margin-top:1em;
 }
 
 #dropzone_kate, #dropzone_sly, #dropzone_petruchio, #dropzone_volvelle {
@@ -174,6 +175,8 @@
 }
 .character_name h6 {
     color:rgb(199, 129, 0);
+    margin-top:2%;
+    margin-bottom:-2%;
 }
 .character_name p {
     font-size:.9em;

@@ -6,7 +6,9 @@ var images = [
     "vid/beating_wife.gif",
     "vid/britches.gif",
     "vid/pinchbelly.gif",
-    "vid/scolds_bridle.gif",
+   
+    //blocking out this vid because its dimensions don't match the rest
+    //"vid/scolds_bridle.gif",
     "vid/shrew.gif"]
 
 //step 2: target existing html

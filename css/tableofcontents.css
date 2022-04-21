@@ -38,6 +38,10 @@ A2: when looking at table of contents page, the reason this is not working is th
     margin:auto;
 }
 
+h1 {
+    margin-top:0em;
+}
+
 .hidden {
     visibility: hidden;
 }
